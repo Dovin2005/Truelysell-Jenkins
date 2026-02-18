@@ -1,0 +1,11 @@
+{
+    "name": "GoogleCalendarSync",
+    "alias": "googlecalendarsync",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\GoogleCalendarSync\\Providers\\GoogleCalendarSyncServiceProvider"
+    ],
+    "files": []
+}

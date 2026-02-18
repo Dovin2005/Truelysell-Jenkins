@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/testimonials",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Testimonials\\": "app/",
+            "Modules\\Testimonials\\Database\\Factories\\": "database/factories/",
+            "Modules\\Testimonials\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Testimonials\\Tests\\": "tests/"
+        }
+    }
+}

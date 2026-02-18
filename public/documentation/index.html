@@ -1,0 +1,2649 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="truelysell">
+	<meta name="author" content="dreamstechnologies">
+
+	<title>Truelysell - Online Documentation.</title>
+
+	<!-- App favicon -->
+	<link rel="shortcut icon" href="assets/img/logo/favicon.png">
+
+	<!-- Vendor -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/prism.css" rel="stylesheet">
+
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+	
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+	<!-- Main CSS -->
+	<link id="mainCss" href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<main class="wrapper sb-default">
+		<!-- Loader -->
+		<div id="loader-wrapper">
+			<div class="loader-ellipsis">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+
+		<!-- Header -->
+		<header class="header">
+			<div class="container-fluid">
+				<div class="header-left">
+					<div class="left-header me-2">
+						<a href="javascript:void(0)" class="sidebar-toggle">
+							<span class="outer-ring">
+								<span class="inner-ring"></span>
+							</span>
+						</a>
+					</div>
+					<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+						<li><a href="mailto:support@dreamstechnologies.com" class="nav-link px-2 link-body-emphasis"><i class="fa-solid fa-headset me-2"></i>Support</a></li>
+						<li><a href="https://calendly.com/dreamstechnologies" class="nav-link px-2 link-body-emphasis" target="_blank"><i class="fa-brands fa-hire-a-helper me-2"></i>Hire Us</a></li>
+						<li><a href="https://codecanyon.net/user/dreamstechnologies" target="_blank" class="nav-link px-2 link-body-emphasis"><i class="fa-brands fa-hire-a-helper me-2"></i>Our Envato</a></li>
+					</ul> 
+					
+					<div class="right-header">
+						<div class="me-2 header-item theme-light">
+							<button type="button" class="btn-topbar tools-item mode" data-bs-theme-tool="light">
+								<span class="feather-icon"><i data-feather="moon"></i></span>
+							</button>
+						</div>
+						<div class="me-2 header-item theme-dark">
+							<button type="button" class="btn-topbar tools-item mode active" data-bs-theme-tool="dark">
+								<span class="feather-icon"><i data-feather="sun"></i></span>
+							</button>
+						</div>
+					</div>
+					<div class="text-end">
+						<a href="https://app.truelysell.com/" target="_blank" class="btn btn-white btn-sm me-2"><i class="fa-solid fa-link me-2"></i>Live Demo</a>
+						<a href="https://codecanyon.net/item/truelysell-ondemand-service-marketplace-nearby-service-finder-and-bookings/26400110" class="btn btn-primary btn-sm" target="_blank"><i class="fa-solid fa-cart-plus me-2"></i>Buy Now</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+
+         <div class="doc-progress">
+           <div class="doc-progress-inner" id="scrollProgress">
+
+           </div>
+         </div>
+		 
+		<div class="sidebar-overlay"></div>
+		<div class="sidebar" data-mode="light">
+			<div class="sidebar-logo">
+				<a href="index.html" class="sb-full"><img src="assets/img/logo/logo.svg" alt="logo"><span class="badge badge-soft-danger fs-14 ms-1">laravel</span></a>
+				<a href="index.html" class="sb-collapse"><img src="assets/img/logo/favicon.png" alt="logo"></a>
+			</div>
+			 <div class="sidebar-inner">
+				 <div class="sidebar-menu">
+				   <ul id="menu-main-menu" class="sidebar-nav">
+						<li class="menu-item submenu">
+							<a href="#instructions" class="active menu-link">
+								<span class="feather-icon"><i data-feather="box"></i></span>
+								<span class="condense">Getting Started</span>
+							</a>
+							<ul class="sidebar-dropdown condense active">
+								<li>
+									<a href="#instructions" class="page-link drop">
+										<span class="menu-dash"><span></span></span>Introduction
+									</a>
+								</li>
+							</ul>
+						</li>
+						
+						
+						<li class="menu-item-separator"></li>
+							<li class="menu-item">
+								<a href="#local_server" class=" menu-link">
+									<span class="feather-icon"><i data-feather="pie-chart"></i></span>
+									<span class="condense">Installation</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#installer" class=" menu-link">
+									<span class="feather-icon"><i data-feather="aperture"></i></span>
+									<span class="condense">Installer</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#user_registration" class=" menu-link">
+									<span class="feather-icon"><i data-feather="user"></i></span>
+									<span class="condense">User Registration</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#provider_registration" class=" menu-link">
+									<span class="feather-icon"><i data-feather="users"></i></span>
+									<span class="condense">Provider Registration</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#faq_module" class=" menu-link">
+									<span class="feather-icon"><i data-feather="help-circle"></i></span>
+									<span class="condense">FAQ Module Documentation</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#subscription_package" class=" menu-link">
+									<span class="feather-icon"><i data-feather="package"></i></span>
+									<span class="condense">Subscription Package</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#google_tools_configuration" class=" menu-link">
+									<span class="feather-icon"><i data-feather="cpu"></i></span>
+									<span class="condense">Google Tools Configuration</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#page_builder_form" class=" menu-link">
+									<span class="feather-icon"><i data-feather="tool"></i></span>
+									<span class="condense">Page Builder Form</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#reply_dispute_modal" class=" menu-link">
+									<span class="feather-icon"><i data-feather="repeat"></i></span>
+									<span class="condense">Reply Dispute Modal</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#admin_commission" class=" menu-link">
+									<span class="feather-icon"><i data-feather="user-check"></i></span>
+									<span class="condense">Admin Commission</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#currency_settings" class=" menu-link">
+									<span class="feather-icon"><i data-feather="dollar-sign"></i></span>
+									<span class="condense">Currency Settings</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#menu_builder" class=" menu-link">
+									<span class="feather-icon"><i data-feather="menu"></i></span>
+									<span class="condense">Menu Builder</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#testimonials" class=" menu-link">
+									<span class="feather-icon"><i data-feather="check-square"></i></span>
+									<span class="condense">Testimonials</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#subscriber_list" class=" menu-link">
+									<span class="feather-icon"><i data-feather="users"></i></span>
+									<span class="condense">Subscriber List</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#blog_category" class=" menu-link">
+									<span class="feather-icon"><i data-feather="grid"></i></span>
+									<span class="condense">Blog Category</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#blog_post_list" class=" menu-link">
+									<span class="feather-icon"><i data-feather="list"></i></span>
+									<span class="condense">Blog Post List</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#profile" class=" menu-link">
+									<span class="feather-icon"><i data-feather="user"></i></span>
+									<span class="condense">Profile</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#footer_builder" class=" menu-link">
+									<span class="feather-icon"><i data-feather="info"></i></span>
+									<span class="condense">Footer Builder</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#email_settings" class=" menu-link">
+									<span class="feather-icon"><i data-feather="mail"></i></span>
+									<span class="condense">Email Settings</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#my_service" class=" menu-link">
+									<span class="feather-icon"><i data-feather="user"></i></span>
+									<span class="condense">My Service</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#service_form_for_providers" class=" menu-link">
+									<span class="feather-icon"><i data-feather="truck"></i></span>
+									<span class="condense">Add Service Form for Providers</span>
+								</a>
+							</li>
+							<!--  -->
+							<li class="menu-item submenu">
+								<a href="#add_service" class="active menu-link">
+									<span class="feather-icon"><i data-feather="briefcase"></i></span>
+									<span class="condense">Add service</span>
+								</a>
+								<ul class="sidebar-dropdown condense active">
+									<li>
+										<a href="#add_service_1" class=" menu-link drop">
+											<span class="feather-icon"><i data-feather="briefcase"></i></span>
+											<span class="condense">Add service 1</span>
+										</a>
+									</li>
+									<li>
+										<a href="#add_service_2" class=" menu-link drop">
+											<span class="feather-icon"><i data-feather="briefcase"></i></span>
+											<span class="condense">Add service 2</span>
+										</a>
+									</li>
+									<li>
+										<a href="#add_service_3" class=" menu-link drop">
+											<span class="feather-icon"><i data-feather="briefcase"></i></span>
+											<span class="condense">Add service 3</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<!--  -->
+							<li class="menu-item">
+								<a href="#service_list" class=" menu-link">
+									<span class="feather-icon"><i data-feather="list"></i></span>
+									<span class="condense">service List</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#service_detail" class=" menu-link">
+									<span class="feather-icon"><i data-feather="info"></i></span>
+									<span class="condense">Service Detail</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#service_booking" class=" menu-link">
+									<span class="feather-icon"><i data-feather="check-circle"></i></span>
+									<span class="condense">Service  Booking</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#payment_options" class=" menu-link">
+									<span class="feather-icon"><i data-feather="credit-card"></i></span>
+									<span class="condense">Payment options</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#payment_success" class=" menu-link">
+									<span class="feather-icon"><i data-feather="check"></i></span>
+									<span class="condense">Payment Success page</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#user_login_flow" class=" menu-link">
+									<span class="feather-icon"><i data-feather="log-in"></i></span>
+									<span class="condense">User Login Flow</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#user_login_flow_1" class=" menu-link">
+									<span class="feather-icon"><i data-feather="log-in"></i></span>
+									<span class="condense">User Login Flow 1</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#purpose" class=" menu-link">
+									<span class="feather-icon"><i data-feather="arrow-up-right"></i></span>
+									<span class="condense">Purpose</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#purpose_com" class=" menu-link">
+									<span class="feather-icon"><i data-feather="arrow-up-right"></i></span>
+									<span class="condense">Purpose_com</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#breadimage_settings" class=" menu-link">
+									<span class="feather-icon"><i data-feather="settings"></i></span>
+									<span class="condense">Breadimage Settings</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#copyright_settings" class=" menu-link">
+									<span class="feather-icon"><i data-feather="settings"></i></span>
+									<span class="condense">Copyright Settings</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#otp_settings" class=" menu-link">
+									<span class="feather-icon"><i data-feather="settings"></i></span>
+									<span class="condense">OTP settings</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#cookies_settings" class=" menu-link">
+									<span class="feather-icon"><i data-feather="settings"></i></span>
+									<span class="condense">Cookies Settings</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#maintenance_settings" class=" menu-link">
+									<span class="feather-icon"><i data-feather="settings"></i></span>
+									<span class="condense">Maintenance Settings</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#product_service_approval" class=" menu-link">
+									<span class="feather-icon"><i data-feather="check"></i></span>
+									<span class="condense">Product/Service Approval</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#appearance_settings" class=" menu-link">
+									<span class="feather-icon"><i data-feather="aperture"></i></span>
+									<span class="condense">Appearance Settings</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#invoice_settings" class=" menu-link">
+									<span class="feather-icon"><i data-feather="settings"></i></span>
+									<span class="condense">Invoice Settings</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#language_settings" class=" menu-link">
+									<span class="feather-icon"><i data-feather="tool"></i></span>
+									<span class="condense">Language Settings</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#invoice_template_settings" class=" menu-link">
+									<span class="feather-icon"><i data-feather="settings"></i></span>
+									<span class="condense">Invoice Template Settings</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#admin_commission_1" class=" menu-link">
+									<span class="feather-icon"><i data-feather="users"></i></span>
+									<span class="condense">Admin Commission</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#form_inputs" class=" menu-link">
+									<span class="feather-icon"><i data-feather="key"></i></span>
+									<span class="condense">Form Inputs</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#user_leads" class="menu-link">
+									<span class="feather-icon"><i data-feather="users"></i></span>
+									<span class="condense">User Leads</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#provider_leads" class="menu-link">
+									<span class="feather-icon"><i data-feather="user"></i></span>
+									<span class="condense">Provider Leads</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#admin_leads" class="menu-link">
+									<span class="feather-icon"><i data-feather="user"></i></span>
+									<span class="condense">Admin Leads</span>
+								</a>
+							</li>
+							<!--  -->
+						<li class="menu-item-separator"></li>
+						<li class="menu-title condense">Info</li>
+						<li class="menu-item">
+							<a href="#faq" class="page-link">
+								<span class="feather-icon"><i data-feather="help-circle"></i></span><span class="condense"><span class="hover-title">FAQs</span> </span>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="#support" class="page-link">
+								<span class="feather-icon"><i data-feather="star"></i></span><span class="condense"><span class="hover-title">Support</span> </span>
+							</a>
+						</li>
+						<li class="menu-item submenu">
+							<a href="#license" class="page-link">
+								<span class="feather-icon"><i data-feather="settings"></i></span>
+								<span class="condense">License & Credits</span>
+							</a>
+							<ul class="sidebar-dropdown condense">
+								<li><a href="#license" class="page-link drop"><span class="menu-dash"><span></span></span>License</a></li>
+								
+							</ul>
+						</li>
+						<li class="menu-item">
+							<a href="#customwork" class="page-link">
+								<span class="feather-icon"><i data-feather="briefcase"></i></span><span class="condense"><span class="hover-title">Custom Work</span> </span>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="#change_log" class="page-link">
+								<span class="feather-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hexagon"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg></span>
+								<span class="condense"><span class="hover-title">Change Log</span> </span>
+								<span class="badge badge-changelog badge-soft-danger fw-semibold fs-8 px-2 ms-2 condense">v2.4.5</span>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="#thanks" class="page-link">
+								<span class="feather-icon"><i data-feather="smile"></i></span><span class="condense"><span class="hover-title">Thank
+										You</span> </span>
+							</a>
+						</li>
+				   </ul>
+				 </div>
+			 </div>
+         </div>
+		<!-- main content -->
+		<div class="main-content">
+			<div class="container-fluid">
+				<!-- Page title & breadcrumb -->
+				<div class="page-title">
+					<div class="breadcrumb">
+						<h1>Getting Started</h1>
+						<ul>
+							<li><a href="index.html">truelysell</a></li>
+							<li>Getting Started</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row sections">
+					<div class="col-xl-12 col-md-12">
+						<!-- Introduction -->
+						<section class="section-block hentry" id="instructions">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Introduction<a class="anchor-link ms-2" href="#instructions"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span>
+										</a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="intro">
+										<div class="item-details mb-3">
+										<div class="row">
+										<div class="col-md-6">
+											<ul class="auth-detail">
+												<li><strong>Item Name : </strong>Truelysell - Service Marketplace, Service Provider List Template</li>												
+												<li><strong>Item Version : </strong><span class="badge badge-changelog badge-soft-danger fw-semibold fs-8 px-2 ms-2">v2.4.5</span></li>
+												<li><strong>Author : </strong><a target="_blank" href="https://dreamstechnologies.com">Dreams Technologies</a></li>
+												<li>Support via email: <a href="mailto:support@dreamstechnologies.com">support@dreamstechnologies.com</a></li>
+												<li>Support via codecanyon: <a target="_blank" href="https://codecanyon.net/item/truelysell-pos-inventory-management-admin-dashboard-template/38834413/support">Take me there</a></li>
+											</ul>
+										</div>
+										<div class="col-md-6">
+											<a class="gallery-thumb" href="assets/img/banners/banner.png">
+												<img src="assets/img/banners/banner.png" class="img-fluid" alt="Banner">
+											</a>
+										</div>
+										</div>
+										</div>
+										<h5>
+											<a href="#" class="pro-thumbnail me-2" target="_blank">
+												<img src="assets/img/logo/favicon.png" class="img-fluid" alt="Dreams Money Thumbnail">
+											</a>  Truelysell - Service Marketplace, Service Provider List Template
+										</h5>
+											<p>Truelysell provides a multiple on-demand serice based boostrap html template. Truelysell template built into LTR format for all regional Suppport.</p>
+										
+									</div>
+									<a href="mailto:support@dreamstechnologies.com" class="btn btn-primary rounded-pill me-2" target="_blank">Contact Support</a>
+									<a href="https://codecanyon.net/item/truelysell-ondemand-service-marketplace-nearby-service-finder-and-bookings/26400110/support" class="btn btn-soft-primary rounded-pill" target="_blank" rel="noreferrer">Create Support ticket</a>
+								</div>
+							</div>
+						</section>
+						
+						<!-- Installation -->
+						<section class="section-block hentry" id="local_server">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Essential Laravel and Composer Commands<a class="anchor-link ms-2" href="#local_server"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<div>
+											<p class="text-success">composer install</p>
+											<img src="assets/img/installation/composer-install.png" alt="composer-install" class="img-fluid mb-4">
+											<p class="fw-semibold mb-0">Description:</p>
+											<p>Installs all the dependencies listed in the <code class="text-success bg-white">composer.json</code> file. This command is used when setting up a project for the first time or when a team member clones the repository.</p>
+											<p class="fw-semibold mb-0">Purpose:</p>
+											<p>Ensures all necessary PHP packages required for the Laravel application are downloaded and installed in the <code class="text-success bg-white">vendor</code> directory.</p>
+										</div>
+
+										<div>
+											<p class="text-success">Composer update (If you already have a vendor file. You can use this command.)</p>
+											<p class="fw-semibold mb-0">Description:</p>
+											<p>Updates all installed dependencies to the latest versions allowed by the constraints defined in the <code class="text-success bg-white">composer.json</code> file. Use this when you want to bring packages up to date while staying within specified version ranges.</p>
+											<p class="fw-semibold mb-0">Purpose:</p>
+											<p>Keeps the project dependencies updated and ensures compatibility with the latest versions.</p>
+										</div>
+
+										<div>
+											<p class="text-success">php artisan storage:link</p>
+											<img src="assets/img/installation/storage-link.png" alt="storage-link" class="img-fluid mb-4">
+											<p class="fw-semibold mb-0">Description:</p>
+											<p>The <span class="text-success">php artisan storage:link</span> command creates a symbolic link from <span class="text-success">public/storage</span> to <span class="text-success">storage/app/public</span>, making files in the storage folder accessible via a public URL.</p>
+										</div>
+
+										<div>
+											<p class="text-success">php artisan serve</p>
+											<img src="assets/img/installation/server.png" alt="server" class="img-fluid mb-4">
+											<p class="fw-semibold mb-0">Description:</p>
+											<p>Starts a built-in development server for running the Laravel application locally. No need for an external web server like Apache or Nginx during development.</p>
+											<p class="fw-semibold mb-0">Purpose:</p>
+											<p>Simplifies testing and development by providing a quick way to host the application locally.</p>
+										</div>
+
+										<div>
+											<p class="text-success">php artisan cache:clear</p>
+											<img src="assets/img/installation/clear-cache.png" alt="clear-cache" class="img-fluid mb-4">
+											<p>Clears all application caches, including data cached via the cache() helper or Cache facade.</p>
+										</div>
+
+										<div>
+											<p class="text-success">php artisan config:clear</p>
+											<img src="assets/img/installation/config-clear.png" alt="config-clear" class="img-fluid mb-4">
+											<p>Clears the configuration cache, ensuring that updates to .env or config files take effect.</p>
+										</div>
+
+										<div>
+											<p class="text-success">php artisan route:clear</p>
+											<img src="assets/img/installation/route-clear.png" alt="route-clear" class="img-fluid mb-4">
+											<p>Removes the cached routes to reflect new or updated routes in the application.</p>
+										</div>
+
+										<div>
+											<p class="text-success">php artisan view:clear</p>
+											<img src="assets/img/installation/view-clear.png" alt="view-clear" class="img-fluid mb-4">
+											<p>Clears compiled Blade templates, forcing the framework to regenerate them.</p>
+										</div>
+									</div>
+							</div>
+						</section>
+
+						<!-- Installer -->
+						<section class="section-block hentry" id="installer">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Installer<a class="anchor-link ms-2" href="#installer"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<h5>Verification</h5>
+										<img src="assets/img/installer/verfication.png" alt="verfication" class="img-fluid">
+										<p class="fw-semibold mb-0">Purpose:</p>
+										<p>The "Verify Purchase" form ensures the legitimacy of the installation by validating the purchase code. It also facilitates a smooth installation process by allowing demo mode users to bypass verification, ensuring flexibility for testing and development environments.</p>
+										<p class="fw-semibold mb-0">Layout:</p>
+										<p>The form features a clean and intuitive design with a heading, an input field for the purchase code, and action buttons ("Check" and "Continue"). Clear messages guide users, and a loading spinner appears during verification for visual feedback. A footer provides support information for additional assistance.</p>
+										<p class="fw-semibold mb-0">Responsive Design:</p>
+										<p>Built with Bootstrap classes, the form is fully responsive, ensuring an optimal user experience across all devices, including desktops, tablets, and mobile screens.</p>
+
+										<h5>Requirements</h5>
+										<img src="assets/img/installer/requirement.png" alt="requirement" class="img-fluid">
+										<p class="fw-semibold mb-0">Purpose:</p>
+										<p>The "Minimum Requirements" form verifies system compatibility by checking PHP version, required extensions, and file permissions. It ensures all prerequisites are met before proceeding with the installation, guiding users to resolve missing components.</p>
+										<p class="fw-semibold mb-0">Layout:</p>
+										<p>The form presents a clean, user-friendly list of checks with indicators: green checkmarks for passed items and red icons with informative messages for failures. Each failed check includes optional links for further assistance. Navigation buttons allow users to go back or proceed if all checks are successful.The form presents a clean, user-friendly list of checks with indicators: green checkmarks for passed items and red icons with informative messages for failures. Each failed check includes optional links for further assistance. Navigation buttons allow users to go back or proceed if all checks are successful.</p>
+										<p class="fw-semibold mb-0">Responsive Design:</p>
+										<p>Utilizing Bootstrap, the form adapts seamlessly across devices, ensuring an optimal experience on desktops, tablets, and mobile screens.</p>
+									</div>
+								</div>
+						</section>
+
+						<!-- User Registration -->
+						<section class="section-block hentry" id="user_registration">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">User Registration<a class="anchor-link ms-2" href="#user_registration"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/user-registration/user-registration.png" alt="user-registration" class="img-fluid mb-4">
+										<h5>Where users can register:</h5>
+										<p>Registration page (accessible via "Sign Up" button/link on the homepage or navigation menu).</p>
+										<h5>Fields required in the registration form:</h5>
+										<p class="">First Name (required)</p>
+										<p class="">Last Name (required)</p>
+										<p class="">Username (required)</p>
+										<p class="">Email Address (required, must be unique)</p>
+										<p class="">Password (required)</p>
+										<p class="">Phone Number (required)</p>
+										<p class="">Terms and Conditions Agreement</p>
+										<p class="">Privacy Policy Agreement</p>
+
+										<h5>User Registration Flow with Email and SMS OTP Verification (Optional).</h5>
+										<img src="assets/img/user-registration/otp-verfication.png" alt="otp-verfication" class="img-fluid mb-4">
+										<h6>Upon form submission, generate and send:</h6>
+										<p><strong>Email OTP:</strong> A random 4 to 6-digit numeric code sent to the provided email address.</p>
+										<p><strong>SMS OTP:</strong> A random 4 to 6-digit numeric code sent to the provided phone number.</p>
+										<p>Allow users to resend OTP if expired.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Provider Registration -->
+						<section class="section-block hentry" id="provider_registration">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Provider Registration<a class="anchor-link ms-2" href="#provider_registration"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/provider-registration/registration.png" alt="provider-registration" class="img-fluid mb-4">
+										<h5>Overview</h5>
+										<p>The Provider Registration form allows new providers to create an account and list their services.</p>
+										<p>This documentation outlines the steps, field details, and user flow for successful registration.</p>
+
+										<h6>The registration form consists of two fieldsets:</h6>
+										<p>First Fieldset - Basic personal and account details.</p>
+										<p>Second Fieldset - Service and company details.</p>
+										
+										<h6>User Flow</h6>
+										<p>Step 1: Enter basic details in the first fieldset and click Get Started.</p>
+										<p>If any field is invalid, error messages are displayed below the respective fields.</p>
+										<p>Step 2: Select a service category and sub-services in the second fieldset.</p>
+										<p>Choose a user type (Individual or Company). If Company is selected, additional fields appear for company details.</p>
+										<p>Step 3: Agree to the terms and policies and click Sign Up.</p>
+
+										<h6>Technical Notes</h6>
+										<p>CSRF token is included for security.</p>
+										<p>Use AJAX to validate fields dynamically and enhance user experience.</p>
+										<p>Ensure responsiveness for mobile and desktop devices.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- FAQ Module -->
+						<section class="section-block hentry" id="faq_module">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">FAQ Module<a class="anchor-link ms-2" href="#faq_module"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/faq-module/faq-module.png" alt="faq-module" class="img-fluid mb-4">
+
+										<h5>Overview</h5>
+										<p>The FAQ module allows administrators or users to manage frequently asked questions, including adding, editing, viewing, and updating the status of FAQs. This document outlines the features, structure, and user flow for managing FAQs effectively.</p>
+
+										<h5>Features</h5>
+										<p class="fw-semibold mb-0">Add FAQ:</p>
+										<p>Admins can create new FAQ entries by providing a question, an answer, and a status (active/inactive).</p>
+										<p class="fw-semibold mb-0">Edit FAQ:</p>
+										<p>Modify existing FAQ entries, including updating the question, answer, or status.</p>
+										<p class="fw-semibold mb-0">Delete FAQ:</p>
+										<p>Remove outdated or irrelevant FAQs.</p>
+										<p class="fw-semibold mb-0">Status Toggle:</p>
+										<p>Enable or disable FAQs dynamically.</p>
+										<p class="fw-semibold mb-0">Search and Filter:</p>
+										<p>Search FAQs by keywords and filter by status.</p>
+										<p class="fw-semibold mb-0">Responsive Interface:</p>
+										<p>User-friendly design compatible with multiple devices.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Subscription Package -->
+						<section class="section-block hentry" id="subscription_package">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Subscription Package<a class="anchor-link ms-2" href="#subscription_package"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/subcription-package/subcription-package.png" alt="subcription-package" class="img-fluid mb-4">
+
+										<h5>Overview</h5>
+										<p>The <strong>Add Subscription Package Form</strong> is designed for creating subscription packages with various configurable options such as title, pricing, duration, number of services, products, and additional attributes. It includes validation, status toggling, and dynamic input handling for different subscription terms.</p>
+
+										<h6>Subscription Form Fields with Info:</h6>
+										<p class="fw-semibold mb-0">Package Title</p>
+										<p>Input field for the subscription package name.</p>
+										<p class="fw-semibold mb-0">Price</p>
+										<p>Input field to specify the price of the package.</p>
+										<p class="fw-semibold mb-0">Package Term</p>
+										<p>Dropdown to select the term type (e.g., Day, Month, Yearly, Lifetime).</p>
+										<p class="fw-semibold mb-0">Package Duration</p>
+										<p>Input field to define the duration based on the selected term (number of days or months).</p>
+										<p class="fw-semibold mb-0">Number of Services</p>
+										<p>Input field to set the number of services included in the package.</p>
+										<p class="fw-semibold mb-0">Number of Featured Services</p>
+										<p>Input field to specify the count of featured services.</p>
+										<p class="fw-semibold mb-0">Number of Products</p>
+										<p>Input field to indicate the number of products allowed.</p>
+										<p class="fw-semibold mb-0">Number of Service Orders <span class="fw-normal">(Optional)</span></p>
+										<p>Input field for specifying the maximum number of service orders.</p>
+										<p class="fw-semibold mb-0">Description</p>
+										<p>Textarea for adding a description of the subscription package.</p>
+										<p class="fw-semibold mb-0">Status Toggle</p>
+										<p>Checkbox toggle to enable or disable the package status.</p>
+
+										<h5>Conclusion:</h5>
+										<p>The <strong>Add Subscription Form</strong> provides essential fields for creating or updating subscription packages, including details like title, pricing, duration, service limits, and a status toggle. This structure ensures a straightforward and efficient way to manage subscription plans.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Google Tools Configuration -->
+						<section class="section-block hentry" id="google_tools_configuration">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Google Tools Configuration:<a class="anchor-link ms-2" href="#google_tools_configuration"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/google-tool-confugration/tool-configuration.png" alt="tool-configuration" class="img-fluid mb-4">
+
+										<h5>Description of Features:</h5>
+
+										<p class="fw-semibold mb-0">1. Google reCAPTCHA:</p>
+										<p>A security tool designed to protect websites from spam and abuse by distinguishing humans from bots.</p>
+										<p>Allows users to enable/disable reCAPTCHA and input the Site Key and Secret Key.</p>
+
+										<p class="fw-semibold mb-0">2. Google Tag Manager:</p>
+										<p>A management tool for deploying and managing marketing tags on a website without altering the code.</p>
+										<p>Provides a toggle to enable/disable and a field to input the Tag ID.</p>
+
+										<p class="fw-semibold mb-0">3. Google Analytics:</p>
+										<p>A web analytics service to track and analyze website traffic and user behavior.</p>
+										<p>Includes a toggle for enabling/disabling analytics and a field to input the Analytics ID.</p>
+
+									</div>
+							</div>
+						</section>
+
+						<!-- Page Builder Form -->
+						<section class="section-block hentry" id="page_builder_form">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Page Builder Form<a class="anchor-link ms-2" href="#page_builder_form"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/page-builder/page-builder.png" alt="img" class="img-fluid mb-4">
+
+										<h5>Overview</h5>
+										<p>The Page Builder Form is a dynamic feature designed for creating and customizing pages with various input fields and functionalities. It provides users with an easy-to-use interface to add content, manage SEO metadata, and toggle the page's status.</p>
+										
+										<h6>Page Title and Slug Management</h6>
+										<p>Input fields for the page title and slug allow the user to define the page's name and URL-friendly identifier.</p>
+										<p>Validation feedback for both fields ensures data accuracy.</p>
+
+										<h6>Dynamic Content Editing</h6>
+										<p>Includes a Text Editor section where users can add multiple content areas dynamically by clicking the "Add TextEditor" button.</p>
+
+										<h6>SEO Metadata Management</h6>
+										<p>Fields for <span class="text-success">SEO Title, SEO Tags</span>, and <span class="text-success">SEO Description</span> allow users to optimize the page for search engines.</p>
+										<p><span class="text-success">TagsInput</span> is integrated for efficient tag management.</p>
+
+										<h6>Status Toggle</h6>
+										<p>A toggle button enables users to easily activate or deactivate the page.</p>
+
+										<h6>Form Validation and Submission</h6>
+										<p>Feedback for each field ensures proper validation.</p>
+										<p>Submit and clear buttons are available to save or reset the form data.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Reply Dispute Modal -->
+						<section class="section-block hentry" id="reply_dispute_modal">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Reply Dispute Modal<a class="anchor-link ms-2" href="#reply_dispute_modal"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/reply-dispatch/reply-dispatch.png" alt="img" class="img-fluid mb-4">
+
+										<h5>Overview</h5>
+										<p>The <span class="text-success">Reply Dispute</span> modal is a user interface component designed to handle dispute replies. It displays the subject and content of the user’s dispute in a read-only format and provides an input area for administrators or moderators to add a reply.</p>
+										
+										<h6>View User Dispute Details</h6>
+										<p>Displays the dispute's subject and content submitted by the user in read-only fields.</p>
+
+										<h6>Reply Content Input</h6>
+										<p>Provides a text area for adding reply content to the dispute.</p>
+										<p>Includes validation to ensure reply content meets required standards.</p>
+
+										<h6>Form Actions</h6>
+										<p>Allows users to cancel the reply action or submit the reply.</p>
+
+									</div>
+							</div>
+						</section>
+
+						<!-- Admin Commission -->
+						<section class="section-block hentry" id="admin_commission">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Admin Commission<a class="anchor-link ms-2" href="#admin_commission"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/admin-commission/admin-commission.png" alt="img" class="img-fluid mb-4">
+
+										<h5>Form Overview</h5>
+										<p>This form adjusts based on commission type chosen (Percentage or Flat). Commission rate can be set for each (percentage or flat). The form should be clean, intuitive, and easy to follow. Each field will be  clearly labeled, and validation messages will guide the provider through the process.</p>
+										
+										<h6>Tax Options</h6>
+										<img src="assets/img/admin-commission/tax-option.png" alt="img" class="img-fluid mb-5">
+
+										<h5>Overview:</h5>
+										<p class="mb-5">This table is designed to display a list of tax options, showing their tax type, tax rate status toggle(enable or disable), action (edit or delete). It serves as a management interface for administrators to review and manage available tax options in the system.</p>
+
+										<h5>Features</h5>
+										<p><strong>Add Tax:</strong> Admins can create new tax options by providing a tax type, tax rate and  allows to add a maximum of 5.</p>
+										<img src="assets/img/admin-commission/add-tax.png" alt="img" class="img-fluid mb-5">
+
+										<p><strong>Edit Tax:</strong> Modify existing tax options.</p>
+										<img src="assets/img/admin-commission/edit-tax.png" alt="img" class="img-fluid mb-5">
+
+										<p><strong>Delete tax:</strong>Remove outdated or irrelevant tax option</p>
+										<img src="assets/img/admin-commission/delete-tax.png" alt="img" class="img-fluid mb-4">
+
+										<p><strong>Status Toggle:</strong>Enable or disable tax option dynamically.</p>
+
+									</div>
+							</div>
+						</section>
+
+						<!-- Currency Settings -->
+						<section class="section-block hentry" id="currency_settings">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Currency Settings<a class="anchor-link ms-2" href="#currency_settings"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/currency-settings/currency-settings.png" alt="img" class="img-fluid mb-5">
+
+										<h5>Overview</h5>
+										<p>This table is designed to display a list of currency settings, showing their currency, code, symbol, status(active or inactive), default status toggle(enable or disable), action (edit or delete). It serves as a management interface for administrators to review and manage available tax options in the system.</p>
+										<p><strong>Add Currency:</strong> Admins can create new currency by providing a currency name, code, symbol, status(enable or disable), and also set default currency by (enable or disable). Each field will be clearly labeled, and validation messages will guide the provider through the process.</p>
+
+										<img src="assets/img/currency-settings/add-currency.png" alt="img" class="img-fluid mb-4">
+										<p><strong>Edit Currency:</strong> Admins can modify the existing currency. Each field will be clearly labeled, and validation messages will guide the provider through the process.</p>
+
+										<img src="assets/img/currency-settings/edit-currency.png" alt="img" class="img-fluid mb-4">
+										<p><strong>Delete Currency:</strong> Admin can remove outdated or irrelevant currency.</p>
+
+										<img src="assets/img/currency-settings/delete-currency.png" alt="img" class="img-fluid">
+									</div>
+							</div>
+						</section>
+
+						<!-- Menu Builder -->
+						<section class="section-block hentry" id="menu_builder">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Menu Builder:<a class="anchor-link ms-2" href="#menu_builder"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/menu-builder/menu-builder.png" alt="img" class="img-fluid mb-5">
+										<h5>Overview</h5>
+										<p>In this page, Listing the built-in menus, website menus and add/edit the menu. It serves as a management interface for administrators to review and manage menus in the system.</p>
+										<p><strong>Built-in menus:</strong> Admin can add built-in menus by clicking the add button and listing in the website menus section.</p>
+										<p><strong>Add / Edit menus:</strong> Admin can add custom menus by providing menu name, url, target and list in website menus section.</p>
+										<p><strong>Website menus:</strong> Admins can edit or delete menus in the website menu list. The system also provides features such as changing the order of menus through top-to-bottom drag-and-drop functionality, adding items to submenus by dragging them to the right, and moving submenu items back to the main menu by dragging them to the left.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Testimonials -->
+						<section class="section-block hentry" id="testimonials">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Testimonials:<a class="anchor-link ms-2" href="#testimonials"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/testimonial/testimonial.png" alt="img" class="img-fluid mb-5">
+										<h5>Overview</h5>
+										<p>This table is designed to display a list of Testimonials, showing their client name, position, description, status(enable or disable), action (edit or delete). It serves as a management interface for administrators to review and manage available testimonials in the system.</p>
+										<p><strong>Add Testimonial:</strong> Admins can create new testimonials by providing a client name, position, image, description, status(enable or disable). Each field will be clearly labeled, and validation messages will guide the provider through the process.</p>
+
+										<img src="assets/img/testimonial/add-textimonial.png" alt="img" class="img-fluid mb-5">
+										<p><strong>Edit Testimonial:</strong> Admins can edit existing testimonials. Each field will be clearly labeled, and validation messages will guide the provider through the process.</p>
+										<img src="assets/img/testimonial/edit-testimonial.png" alt="img" class="img-fluid mb-5">
+										<p><strong>Delete Testimonial:</strong> Admin can remove outdated or irrelevant testimonials.</p>
+										<img src="assets/img/testimonial/delete-testimonial.png" alt="img" class="img-fluid">
+									</div>
+							</div>
+						</section>
+
+						<!-- Subscriber List -->
+						<section class="section-block hentry" id="subscriber_list">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Subscriber List:<a class="anchor-link ms-2" href="#subscriber_list"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/subscriber-list/subscriber-list.png" alt="img" class="img-fluid mb-5">
+										<h5>Overview</h5>
+										<p>This table is designed to display a list of newsletter subscribers, showing their email, status (enabled or disabled), actions (such as delete), and providing a search function by email. It serves as a management interface for administrators to review and manage the subscriber list in the system.</p>
+										
+										<h6>Features</h6>
+										<p><strong>Send Email:</strong> By clicking the checkbox in the table list, you can select one or more rows to send emails (clicking Send Email button) to newsletter subscribers.</p>
+										<p><strong>Status:</strong> Enable or disable newsletter subscriber dynamically</p>
+										<p><strong>Delete Subscriber:</strong> Admin can remove outdated or irrelevant newsletter subscribers.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Blog Category -->
+						<section class="section-block hentry" id="blog_category">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Blog Category:<a class="anchor-link ms-2" href="#blog_category"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/blog-category/blog-category.png" alt="img" class="img-fluid mb-5">
+										<h5>Overview</h5>
+										<p>This table is designed to display a list of blog categories, showing their category name, status(enable or disable), action (edit or delete). It serves as a management interface for administrators to review and manage available blog categories in the system.</p>
+
+										<p><strong>Add blog category:</strong> Admins can create a new blog category by providing a category name, slug. Each field will be clearly labeled, and validation messages will guide the provider through the process.</p>
+										<img src="assets/img/blog-category/add-category.png" alt="img" class="img-fluid mb-5">
+										<p><strong>Edit blog category:</strong> Admins can edit existing blog categories. Each field will be clearly labeled, and validation messages will guide the provider through the process.</p>
+										<img src="assets/img/blog-category/edit-category.png" alt="img" class="img-fluid mb-5">
+										<p><strong>Delete blog category:</strong> Admin can remove outdated or irrelevant blog categories.</p>
+										<img src="assets/img/blog-category/delete-category.png" alt="img" class="img-fluid">
+									</div>
+							</div>
+						</section>
+
+						<!-- Blog Post List -->
+						<section class="section-block hentry" id="blog_post_list">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Blog Post List:<a class="anchor-link ms-2" href="#blog_post_list"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/blog-post-list/blog-post.png" alt="img" class="img-fluid mb-5">
+										<h5>Overview</h5>
+										<p>This table is designed to display a list of blog posts, showing their blog post title, category name , popular(yes or no), status(enable or disable), action (edit or delete). It serves as a management interface for administrators to review and manage available blog posts in the system.</p>
+
+										<p><strong>Add blog post:</strong> Admins can create a new blog post by providing a blog post image, title, slug, category, description, tags, seo title, seo description, popular, status(enable or disable). Each field will be clearly labeled, and validation messages will guide the provider through the process.</p>
+										<img src="assets/img/blog-post-list/add-post.png" alt="img" class="img-fluid mb-5">
+										<p><strong>Edit blog post:</strong> Admins can edit existing blog posts. Each field will be clearly labeled, and validation messages will guide the provider through the process.</p>
+										<img src="assets/img/blog-post-list/edit-post.png" alt="img" class="img-fluid mb-5">
+										<p><strong>Delete blog post:</strong> Admin can remove outdated or irrelevant blog posts.</p>
+										<img src="assets/img/blog-post-list/delete-post.png" alt="img" class="img-fluid">
+									</div>
+							</div>
+						</section>
+
+						<!-- Profile -->
+						<section class="section-block hentry" id="profile">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Profile:<a class="anchor-link ms-2" href="#profile"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/profile/profile.png" alt="img" class="img-fluid mb-5">
+										<h5>Form Overview:</h5>
+										<h6>Personal Information:</h6>
+										<p>Image - image size(less than 2mb), format(jpg, jpeg, png)</p>
+										<p>Firstname</p>
+										<p>Lastname</p>
+										<p>Username - (if allowed to edit)</p>
+										<p>Phone number</p>
+										
+										<h6>Address Information:</h6>
+										<p>Country, state, city, postal code</p>
+
+										<h6>Change Password:</h6>
+										<p>The admin can update their password, ensuring that the new password matches the confirmation password and is at least 8 characters long.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Footer Builder: -->
+						<section class="section-block hentry" id="footer_builder">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Footer Builder:<a class="anchor-link ms-2" href="#footer_builder"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/footer-builder/footer-builder.png" alt="img" class="img-fluid mb-5">
+										<h6>Overview:</h6>
+										<p>In this page, admin can update the footer section by providing section title, section content and maximum section of 5 and also provides features like status (enable or disable for each section) and overall status. It serves as a management interface for administrators to review and manage available footer builders  in the system.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Email Settings -->
+						<section class="section-block hentry" id="email_settings">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Email Settings<a class="anchor-link ms-2" href="#email_settings"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<p>In Email settings, There are two configuration settings. They are,</p>
+										<p>i) SMTP</p>
+										<p>ii) Twilio</p>
+										<img src="assets/img/email-settings/email-setting-1.png" alt="img" class="img-fluid mb-5">
+
+										<h6>i) SMTP:</h6>
+										<p>SMTP (Simple Mail Transfer Protocol) is a standard protocol used to send and receive email messages. It enables email clients and applications to communicate with an email server to deliver messages to the intended recipients.</p>
+										<p>When configuring SMTP email settings in your application, the following details are required:</p>
+
+										<h5 class="mb-4">Key SMTP Settings:</h5>
+										<ol>
+											<li><h6>SMTP Host:</h6></li>
+											<p>The address of the SMTP server responsible for sending emails. Examples:</p>
+											<p>Gmail: <code class="text-success bg-white">smtp.googlemail.com</code></p>
+											<li><h6>SMTP Port:</h6></li>
+											<p>The port number used by the SMTP server. Common ports are:</p>
+											<p><strong>587:</strong> Secure SMTP with STARTTLS (most recommended)</p>
+											<li><h6>SMTP Username:</h6></li>
+											<p>The email address or username used to authenticate with the SMTP server.</p>
+											<li><h6>SMTP Password:</h6></li>
+											<p>The password for the provided email account. Some providers may require an App</p>
+											<p><i>Password </i> instead of the regular account password.</p>
+											<li><h6> From Address:</h6></li>
+											<p>The email address displayed as the sender of the email.</p>
+											<li><h6> From Name:</h6></li>
+											<p>A user-friendly name displayed alongside the "From Address" in the recipient's inbox.</p>
+										</ol>
+
+										<h6>ii) Twilio</h6>
+
+										<p>Twilio SendGrid is a reliable cloud-based email service that enables applications to send transactional, marketing, and notification emails at scale. Configuring SendGrid for mail settings in your application involves setting up SMTP or API integration to enable seamless email delivery.</p>
+
+										<h5>Key Components for SendGrid Configuration:</h5>
+										<h6>1) From Email Address:</h6>
+										<p>The email address used as the sender. Ensure this address is verified in your SendGrid account under <strong>Sender Authentication</strong>.</p>
+
+										<h6>2) Sendgrid key:</h6>
+										<p>Go to <a href="#">https://signup.sendgrid.com/</a></p>
+										<p>Signup with Details</p>
+
+										<img src="assets/img/email-settings/email-setting-2.png" alt="img" class="img-fluid mb-5">
+										<p>After Signup process, save the recovered key for future reference in below screen shot.</p>
+
+										<img src="assets/img/email-settings/email-setting-3.png" alt="img" class="img-fluid mb-5">
+										<p>Your SendGrid <strong>API Key</strong> serves as the SMTP password. Generate this key from your SendGrid dashboard:</p>
+										<p>Go to <strong>Settings > API Keys > Create API Key</strong>.</p>
+										<p>Assign appropriate permissions (e.g., full access for sending emails).</p>
+
+										<div>
+											<h5>2)  SMS Settings</h5>
+											<p>In SMS settings, There are two configuration settings. They are,</p>
+											<p>i) Nexmo</p>
+											<p>ii) Twilio</p>
+											<img src="assets/img/email-settings/email-setting-4.png" alt="img" class="img-fluid mb-5">
+											<h6>i) Nemo</h6>
+											<p>Nexmo, rebranded as Vonage, is a communication platform that provides APIs for sending and receiving SMS messages, making it a reliable choice for integrating SMS functionality into your application.</p>
+											<p>To configure and use Nexmo for SMS delivery, you need the following settings and API details.</p>
+
+											<h5>Key Components for Nexmo SMS Configuration:</h5>
+											<ol>
+												<li class="fw-semibold"> API Key:</li>
+												<p>A unique identifier for your Nexmo account, used to authenticate API requests.</p>
+												<li class="fw-semibold">API Secret:</li>
+												<p>A secret token linked to your API Key for secure communication with Nexmo's API.</p>
+												<li class="fw-semibold">Sender ID:</li>
+												<p>The name or number that will appear as the sender in the recipient's SMS inbox.</p>
+												<p>This can be an alphanumeric string (up to 11 characters) or a numeric phone number.</p>
+											</ol>
+
+											<h6>ii) Twilio</h6>
+											<p>Twilio is a robust cloud communication platform that provides APIs to send and receive SMS globally. Configuring Twilio SMS in your application allows you to implement features such as transactional notifications, alerts, and two-factor authentication (2FA).</p>
+
+											<h5>Key Components for Twilio SMS Configuration:</h5>
+											<ol>
+												<li class="fw-semibold">Account SID:</li>
+												<p>A unique identifier for your Twilio account. This is used to authenticate API requests.</p>
+												<p>Found in your Twilio Console under Account Info.</p>
+												<li class="fw-semibold">Auth Token:</li>
+												<p>A secret key used along with the Account SID for secure communication with Twilio's API.</p>
+												<p>Found alongside the Account SID in your Twilio Console.</p>
+												<li class="fw-semibold">Twilio Phone Number:</li>
+												<p>A phone number purchased from Twilio, used as the sender for outgoing SMS.</p>
+												<p>Ensure the number is SMS-enabled, which you can verify in your Twilio Console.</p>
+											</ol>
+										</div>
+
+										<div>
+											<h4>3)  Notification Settings</h4>
+											<p>Notification settings allow users or applications to configure how they want to receive updates, alerts, or important information. These settings can be customized based on the user's preferences, and the options typically include Email Notifications, SMS Notifications, and Push Notifications.</p>
+											<img src="assets/img/email-settings/email-setting-5.png" alt="img" class="img-fluid mb-5">
+
+											<h5>Available Notification Options</h5>
+											<ol>
+												<li class="fw-semibold">Email Notifications:</li>
+												<p>Sent via email to inform users about important updates, such as password resets, system alerts, new messages, or promotions.</p>
+												<p>Configuration includes SMTP settings to ensure reliable email delivery.</p>
+												<li class="fw-semibold">SMS Notifications:</li>
+												<p>Sent via text message (SMS) to a registered phone number.</p>
+												<p>Ideal for urgent alerts, one-time passcodes (OTP), order confirmations, and reminders.</p>
+												<p>Requires integration with SMS gateway providers like Twilio and Nexmo (Vonage).</p>
+												<li class="fw-semibold">Push Notifications:</li>
+												<p>Delivered directly to a user’s device (mobile, desktop, or web app) in real-time.</p>
+												<p>Typically used for engaging users with app updates, promotions, or time-sensitive alerts.</p>
+												<p>Requires proper push notification service integration (e.g., Firebase Cloud Messaging for mobile apps).</p>
+											</ol>
+										</div>
+
+										<div>
+											<h4>Templates</h4>
+											<p>Templates are pre-designed, reusable formats or layouts used for rendering content across an application, ensuring consistency, efficiency, and maintainability. They act as blueprints for sms, emails, notifications, or documents by defining structure and design while allowing dynamic content to be populated programmatically.</p>
+											<p>Templates Fields include:</p>
+											<p class="fw-semibold">Template Type</p>
+											<ol>
+												<li>Email</li>
+												<li>SMS</li>
+												<li>Notifications</li>
+											</ol>
+											<p class="fw-semibold">Notification Type</p>
+											<p>Notification type defines  categorized by their purpose in user communication. Types like Registration Notification, Forgot password, Booking Success, Booking Cancel, Etc…</p>
+											<p class="fw-semibold">Title</p>
+											<p>Title describes about template based on notification type</p>
+											<p class="fw-semibold">Subject</p>
+											<p>It describes the subject sent to email</p>
+											<p class="fw-semibold">Description</p>
+											<p>In this field, we can create template format to send sms,email,notifications.</p>
+										</div>
+
+										<div>
+											<h4>Booking List</h4>
+											
+											<ol>
+												<li class="fw-semibold">User - Booking List</li>
+												<p>The Booking List refers to a comprehensive, organized view or report that displays all the booking records associated with a user, provider and service. It provides an overview of booking details, status, and relevant information for efficient management, tracking, and user interaction.</p>
+												<img src="assets/img/email-settings/email-setting-6.png" alt="img" class="img-fluid mb-5">
+												<li class="fw-semibold">Provider - Booking List</li>
+												<p> The Provider Booking List is a detailed and organized view that allows service providers to manage and monitor their bookings.</p>
+												<p>After a customer books a service, the provider will get a booking list as shown below.</p>
+												<img src="assets/img/email-settings/email-setting-7.png" alt="img" class="img-fluid mb-5">
+											</ol>
+											<p>Provider When accept the Bookings, it shows the confirmation popup like this,</p>
+											<img src="assets/img/email-settings/email-setting-8.png" alt="img" class="img-fluid mb-5">
+											<p>After, Accept the bookings, the booking status changed as Inpogress as highlighted in below screenshot.</p>
+											<img src="assets/img/email-settings/email-setting-9.png" alt="img" class="img-fluid mb-5">
+											<p>Provider can chat with user, after accept bookings. After service completion, provider will complete the order. Booking status will be changed as completed.</p>
+											<img src="assets/img/email-settings/email-setting-9.png" alt="img" class="img-fluid">
+										</div>
+
+									</div>
+							</div>
+						</section>
+
+						<!-- My Service -->
+						<section class="section-block hentry" id="my_service">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">My Service<a class="anchor-link ms-2" href="#my_service"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/my-service/my-service.png" alt="img" class="img-fluid mb-5">
+										<p>The system will still display the list of available services to the provider even if their subscription has ended.</p>
+										<p><strong>Expired Subscription:</strong> For expired subscriptions, the provider can still browse the services they had access to before the subscription expired.</p>
+										<p><strong>Subscription Status:</strong> Display a message indicating that the subscription has expired and prompt the provider to renew or upgrade.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Add Service Form for Providers -->
+						<section class="section-block hentry" id="service_form_for_providers">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Add Service Form for Providers<a class="anchor-link ms-2" href="#service_form_for_providers"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/service-form-form-provider/service-form-for-provider.png" alt="img" class="img-fluid mb-5">
+										<h5>Form Overview</h5>
+										<p><strong>Purpose:</strong> Allow the provider to add a new service .</p>
+										<p><strong>Layout:</strong> The form should be clean, intuitive, and easy to follow. Each section will be clearly labeled, and validation messages will guide the provider through the process.</p>
+										<p><strong>Responsive Design:</strong> Ensure the form works well on both desktop and mobile devices.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Add Service -->
+						<section class="section-block hentry" id="add_service">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Add Service<a class="anchor-link ms-2" href="#add_service"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/add-services/add-service.png" alt="img" class="img-fluid mb-5">
+										<h6>Form Overview</h6>
+										<p><strong>Dynamic Pricing:</strong>The form adjusts based on the <strong>service type</strong> chosen, showing relevant pricing</p>
+										<p>Price can be set for each additional service</p>
+										<p><strong>Layout:</strong> The form should be clean, intuitive, and easy to follow. Each section will be  clearly labeled, and validation messages will guide the provider through the process.</p>
+										<p><strong>Responsive Design:</strong> Ensure the form works well on both desktop and mobile devices.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Add Service 1 -->
+						<section class="section-block hentry" id="add_service_1">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Add Service<a class="anchor-link ms-2" href="#add_service_1"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/add-services/add-service-1.png" alt="img" class="img-fluid mb-5">
+										<h6>Allow Users to Book Services Across Locations:</h6>
+										<p>If customers can book a service across different locations:</p>
+										<p>Ensure the frontend lets users select a location before choosing a service.</p>
+										<p>Backend should filter service availability by location.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Add Service 2 -->
+						<section class="section-block hentry" id="add_service_2">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Add Service<a class="anchor-link ms-2" href="#add_service_2"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/add-services/add-service-2.png" alt="img" class="img-fluid mb-5">
+										<p>To allow <strong>multiple images</strong> to be added for each service in a user-friendly and structured way, we can extend the <strong>Add Service Form</strong> to include a section for <strong>image uploads</strong>. The images will be displayed for users to view the service offerings</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Add Service 3 -->
+						<section class="section-block hentry" id="add_service_3">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Add Service<a class="anchor-link ms-2" href="#add_service_3"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/add-services/add-service-3.png" alt="img" class="img-fluid mb-5">
+										<p>When creating or updating a service:</p>
+										<p>Add options to input SEO metadata.</p>
+										<p>Validate metadata to ensure it meets SEO standards (e.g., length of meta descriptions).</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Service List -->
+						<section class="section-block hentry" id="service_list">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Service List<a class="anchor-link ms-2" href="#service_list"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/service-list/service-list.png" alt="img" class="img-fluid mb-5">
+										<h6>User's View:</h6>
+										<p>The system will not display the list of available services to the user  when Provider subscription has ended.</p>
+										<h6>Search</h6>
+										<p>Combine the filter with a search box to allow keyword-based searches </p>
+										<p>Search based on Category , Sub category , Location , Price range , Rating</p>
+										<h6>Sorting</h6>
+										<p>Allow sorting results by:</p>
+										<p>Price (Low to High/High to Low)</p>
+										<p>Relevance</p>
+										<p>c. Default Recommendations</p>
+										<p>Display featured or popular services when no filters are applied.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Service List -->
+						<section class="section-block hentry" id="service_detail">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Service Detail<a class="anchor-link ms-2" href="#service_detail"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/service-detail/service-details.png" alt="img" class="img-fluid mb-5">
+										<h6>Core Service Information Section</h6>
+										<ol>
+											<li class="fw-semibold">Category & Subcategory:</li>
+											<p>E.g., "Category: Automotive, Subcategory: Car Wash."</p>
+											<li class="fw-semibold">Location(s):</li>
+											<p>List the locations where the service is available.</p>
+											<p>Optionally include a map for convenience.</p>
+											<li class="fw-semibold">Rating and Reviews:</li>
+											<p>Display the average rating (e.g., ⭐⭐⭐⭐ 4.5) and total reviews count (e.g., "150 reviews").</p>
+											<p>Add a "View All Reviews" button.</p>
+											<li class="fw-semibold">Price:</li>
+											<p>Show the price clearly (e.g., "$50 per session").</p>
+											<p>Include any discounts or offers (e.g., "20% off for first-time customers").</p>
+										</ol>
+									</div>
+							</div>
+						</section>
+						
+						<!-- Service  Booking -->
+						<section class="section-block hentry" id="service_booking">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Service Booking<a class="anchor-link ms-2" href="#service_booking"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/service-booking/service-booking.png" alt="img" class="img-fluid mb-5">
+										<h6>Provide User Details</h6>
+										<p>Collect user information and needed details above proceed Service details bookings</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Payment options -->
+						<section class="section-block hentry" id="payment_options">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Payment options<a class="anchor-link ms-2" href="#payment_options"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/payment-option/payment-option.png" alt="img" class="img-fluid mb-5">
+										<h6>Payment Options:</h6>
+										<p>Provide multiple payment options:</p>
+										<p>Paypal</p>
+										<p>Stripe</p>
+										<p>Bank Transfer</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Payment Success page -->
+						<section class="section-block hentry" id="payment_success">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Payment Success page<a class="anchor-link ms-2" href="#payment_success"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/payment-success/payment-success.png" alt="img" class="img-fluid mb-5">
+										<h6>Payment Options:</h6>
+										<p>Provide multiple payment options:</p>
+										<p>Paypal</p>
+										<p>Stripe</p>
+										<p>Bank Transfer</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- User Login Flow -->
+						<section class="section-block hentry" id="user_login_flow">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">User Login Flow<a class="anchor-link ms-2" href="#user_login_flow"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/user-login-flow/user-login-flow.png" alt="img" class="img-fluid mb-5">
+										<p>User accesses the <strong>Login Page</strong>.</p>
+										<p>Provide a clear choice of login options with visually distinct buttons:</p>
+										<p><strong>Username/Password Login</strong></p>
+										<p><strong>Login via OTP</strong></p>
+										<p><strong>Login with Google</strong></p>
+									</div>
+							</div>
+						</section>
+
+						<!-- User Login Flow 1 -->
+						<section class="section-block hentry" id="user_login_flow_1">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">User Login Flow<a class="anchor-link ms-2" href="#user_login_flow_1"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/user-login-flow/user-login-flow-1.png" alt="img" class="img-fluid mb-5">
+										<ol>
+											<li class="fw-semibold">Personal Information:</li>
+											<p>Name: First and Last Name.</p>
+											<p>Email Address: Editable but requires re-verification if changed.</p>
+											<p>Phone Number: Editable with an option to verify via OTP.</p>
+											<p>Date of Birth (if applicable).</p>
+											<p>Gender (optional).</p>
+											<li class="fw-semibold">Profile Picture:</li>
+											<p>Option to upload a new profile picture or remove the current one.</p>
+											<p>Show live preview after upload.</p>
+											<li class="fw-semibold">Account Settings:</li>
+											<p>Username (if allowed to edit).</p>
+											<p>Password reset option (e.g., "Change Password" with redirect or modal).</p>
+											<li class="fw-semibold">Address Information (if applicable):</li>
+											<p>Primary Address (editable fields for street, city, state, zip code).</p>
+											<p>Add/Edit multiple addresses with tagging (e.g., "Home", "Office").</p>
+										</ol>
+									</div>
+							</div>
+						</section>
+
+						<!-- Purpose: -->
+						<section class="section-block hentry" id="purpose">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Purpose:<a class="anchor-link ms-2" href="#purpose"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<div class="border-bottom mb-4">
+											<img src="assets/img/purpose/purpose.png" alt="img" class="img-fluid mb-5">
+											<h5>Purpose:</h5>
+											<p>Allow the admin to manage Company Settings efficiently through a clean, intuitive interface. The settings include company information, contact details, and address information.</p>
+										</div>
+										<div class="border-bottom mb-4">
+											<h5>Layout:</h5>
+											<p>The form is designed for clarity and ease of use:</p>
+											<ol>
+												<li class="fw-semibold">Section Header:</li>
+												<p>The bold title "Company Settings" clearly indicates the purpose of the page.</p>
+												<p>Breadcrumb navigation (Dashboard / Settings / Company Settings) provides context to users.</p>
+												<li class="fw-semibold">Company Information Section:</li>
+												<p>Fields are displayed in a two-column layout for improved readability:</p>
+												<p class="fw-semibold">App Name</p>
+												<p class="fw-semibold">Company Name</p>
+												<p class="fw-semibold">Phone Number</p>
+												<p class="fw-semibold">Email</p>
+												<p class="fw-semibold">Fax Number</p>
+												<p class="fw-semibold">Website</p>
+												<p class="fw-semibold">Timezone</p>
+												<p>Required fields are marked with an asterisk (*) for user clarity.</p>
+												<li class="fw-semibold">Address Information Section:</li>
+												<p>A dedicated section for the company’s address ensures organized input.</p>
+												<li class="fw-semibold">Update Button:</li>
+												<p>A prominent "Update" button in blue at the top-right corner saves changes efficiently.</p>
+											</ol>
+										</div>
+										<h5>Responsive Design:</h5>
+										<p>On mobile devices, fields stack vertically for a smooth user experience.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Purpose_com -->
+						<section class="section-block hentry" id="purpose_com">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Purpose_com<a class="anchor-link ms-2" href="#purpose_com"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<div class="border-bottom mb-4">
+											<img src="assets/img/purpose/purpose-com.png" alt="img" class="img-fluid mb-5">
+											<h5>Purpose:</h5>
+											<p>Allow the admin to upload or update the site’s logo and favicon.</p>
+										</div>
+
+										<div class="border-bottom mb-4">
+											<h5>Layout Design:</h5>
+											<ol>
+												<li class="fw-semibold">Section Header:</li>
+												<p>A clear and bold title, <strong>"Logo-Favicon Settings,"</strong> ensures users immediately understand the purpose of the page.</p>
+												<p>A breadcrumb navigation trail (Dashboard / Settings / Logo-Favicon Settings) gives context to the current page.</p>
+												<li class="fw-semibold">Logo Upload Section:</li>
+												<p><strong>Header:</strong> "Logo" (clearly labeled).</p>
+												<p><strong>Instructions:</strong></p>
+												<p>Recommended dimensions (155px × 40px) are displayed in red to emphasize the importance of the size requirement.</p>
+												<p>Allowed formats: JPG or PNG.</p>
+												<p><strong>Upload Area:</strong></p>
+												<p>The drag-and-drop file upload area is outlined with a dotted border for visual clarity.</p>
+												<p>A <strong>"Click to Upload"</strong> link allows manual file selection.</p>
+												<p>A placeholder upload icon enhances user understanding.</p>
+
+												<li class="fw-semibold">Favicon Upload Section:</li>
+												<p><strong>Header:</strong> "Favicon" (clearly labeled).</p>
+												<p><strong>Instructions:</strong></p>
+												<p>Recommended dimensions (32px × 32px) are displayed in red for emphasis.</p>
+												<p>Allowed formats: JPG or PNG.</p>
+												<p><strong>Upload Area:</strong></p>
+												<p>Similar drag-and-drop zone with a dotted border and an upload icon.</p>
+												<p><strong>"Click to Upload"</strong> option for manual selection.</p>
+
+												<li class="fw-semibold">Update Button:</li>
+												<p>A prominent blue <strong>"Update"</strong> button is placed at the top-right to save changes.</p>
+												<p>The placement ensures quick access for users after uploading the logo and favicon.</p>
+											</ol>
+										</div>
+												<h5>Responsive Design:</h5>
+												<p>The layout scales seamlessly on mobile and tablet devices:</p>
+												<p>Upload areas stack vertically for a clean and accessible view.</p>
+												<p>The <strong>"Update"</strong> button remains fixed at the top for quick access on small screens.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Breadimage settings -->
+						<section class="section-block hentry" id="breadimage_settings">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Breadimage Settings<a class="anchor-link ms-2" href="#breadimage_settings"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<div class="border-bottom mb-4">
+											<img src="assets/img/breadimage-settings/breadimage-settings.png" alt="img" class="img-fluid mb-5">
+											<h5>Purpose:</h5>
+											<p>Allow the admin to manage BreadImage Settings efficiently by providing a user-friendly upload interface.</p>
+										</div>
+
+										<div class="border-bottom mb-4">
+											<h5>Layout:</h5>
+											<ol>
+												<li class="fw-semibold">Section Header:</li>
+												<p>The bold title "BreadImage Settings" ensures clarity.</p>
+												<p>Breadcrumb navigation (Dashboard / Settings / BreadImage Settings) provides context.</p>
+												<li class="fw-semibold">Image Upload Area:</li>
+												<p>A clean, <strong>drag-and-drop upload box</strong> simplifies the upload process.</p>
+												<p>The recommended dimensions (155px x 40px) are displayed in red for user guidance.</p>
+												<p>Supported formats are <strong>JPG or PNG</strong> with a size restriction of 155px x 40px.</p>
+												<p>A clickable <strong>"Click to Upload"</strong> link makes the upload intuitive.</p>
+												<li class="fw-semibold">Update Button:</li>
+												<p>A prominent blue <strong>"Update" button</strong> at the top-right ensures quick changes are saved.</p>
+											</ol>
+										</div>
+									</div>
+							</div>
+						</section>
+
+						<!-- Copyright settings -->
+						<section class="section-block hentry" id="copyright_settings">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Copyright Settings<a class="anchor-link ms-2" href="#copyright_settings"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/copyright-settings/copyright-settings.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>The form enables providers to add new service details effectively. Specifically, the input field labeled "Copyright" allows them to include copyright text relevant to the service. This ensures all necessary legal or informational content is documented properly for the service being added.</p>
+										<h6>Layout:</h6>
+										<p>The form is designed to be clean, user-friendly, and intuitive. The "Copyright" section is prominently placed within a bordered and rounded container, making it visually distinct and easy to locate. Labels and placeholders clearly communicate the purpose of each input field, while the use of a <span class="text-success">textarea</span> provides adequate space for providers to input text. Validation messages, such as those displayed by the <span class="text-success">copyright_error</span> span, appear beneath the relevant field to provide immediate, actionable feedback without overwhelming the user.</p>
+										<h6>Responsive Design:</h6>
+										<p>The form adopts a responsive layout that adjusts seamlessly across desktop and mobile devices. The grid-based structure, utilizing Bootstrap's <span class="text-success">col-xxl</span> and <span class="text-success">col-lg</span> classes, ensures that elements are appropriately sized and aligned on various screen sizes. Text areas, buttons, and validation messages remain usable and readable regardless of device, maintaining a consistent and professional appearance. This approach guarantees accessibility and usability for all providers, enhancing their overall experience.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- OTP settings -->
+						<section class="section-block hentry" id="otp_settings">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">OTP settings<a class="anchor-link ms-2" href="#otp_settings"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/otp-settings/otp-settings.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This form allows administrators to configure user authentication settings, including toggling registration and login functionality, selecting OTP types, setting OTP digit limits, and defining OTP expiration times. It provides a streamlined way to customize authentication mechanisms for improved security and user experience.</p>
+										<h6>Layout:</h6>
+										<p>The form is structured for clarity and ease of use. Each section is enclosed in a bordered and rounded container for visual segmentation. Toggle switches for "Register" and "Login" are grouped into two distinct rows for better organization and quick accessibility. The OTP-related configurations, including type, digit limit, and expiration time, are placed in a second row using evenly spaced columns to ensure logical grouping and alignment. Labels are prominently displayed alongside their respective inputs, and validation messages appear directly beneath the relevant fields to provide immediate feedback.</p>
+										<h6>Responsive Design:</h6>
+										<p>The form is built with responsive principles to ensure usability across all devices. The Bootstrap grid system adapts layout elements based on screen size, maintaining alignment and readability on desktops, tablets, and mobile devices. Input fields, toggle switches, and dropdowns are touch-friendly, ensuring smooth interaction on smaller screens. This design guarantees a consistent experience for all users, regardless of their device.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Cookies Settings -->
+						<section class="section-block hentry" id="cookies_settings">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Cookies Settings<a class="anchor-link ms-2" href="#cookies_settings"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/cookies-settings/cookies-setting-1.png" alt="img" class="img-fluid mb-5">
+										<img src="assets/img/cookies-settings/cookies-setting-2.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This form provides a customizable interface for managing cookie consent settings on a website. Administrators can configure the cookie content text, banner position, button texts, and additional options like showing a decline button or linking to a cookies policy page. It ensures compliance with privacy regulations like GDPR by allowing users to accept or decline cookies with transparency.</p>
+										<h6>Layout:</h6>
+										<p>The form is divided into distinct sections for each configurable element, wrapped in bordered and rounded containers for visual clarity. The "Cookies Content Text" section includes a text area for detailed information, while dropdowns for "Cookies Position" and "Agree" and "Decline" button labels allow easy selection of predefined values. A toggle switch is used to enable or disable the "Show Decline Button" option, providing a modern and interactive control. Each input is accompanied by validation error messages to guide the user in case of incorrect or missing data.</p>
+										<h6>Responsive Design:</h6>
+										<p>Built using a responsive framework, the layout adapts seamlessly to different screen sizes. The <span class="text-success">col-xxl</span> and <span class="text-success">col-lg</span> classes ensure proper alignment and spacing on larger screens, while the stacked layout on smaller devices maintains usability. The touch-friendly inputs and clear labels guarantee accessibility and a consistent user experience across all devices.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Maintenance Settings -->
+						<section class="section-block hentry" id="maintenance_settings">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Maintenance Settings<a class="anchor-link ms-2" href="#maintenance_settings"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/maintenance-settings/maintenance-settings.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This form is designed to configure maintenance mode settings for a website. It enables administrators to toggle maintenance mode on or off and customize the content displayed to users when the website is under maintenance. This ensures effective communication with users during downtime, providing essential information or updates while preventing access to the site's full functionality.</p>
+										<h6>Layout:</h6>
+										<p>The form consists of two main sections, each enclosed in a bordered and rounded container for a clean and organized appearance. The first section includes a toggle switch labeled "Maintenance," allowing administrators to easily enable or disable maintenance mode. The second section provides a text area labeled "Maintenance Content," where administrators can specify the message displayed to users during maintenance. Clear headings and concise labels ensure the form is user-friendly, with sufficient spacing between elements for readability.</p>
+										<h6>Responsive Design:</h6>
+										<p>The layout is fully responsive, leveraging <span class="text-success">col-xxl</span> and <span class="text-success">col-lg</span> classes to adapt seamlessly across different screen sizes. On larger screens, the sections are displayed side by side for efficient use of space, while on smaller screens, the elements stack vertically for better accessibility. Touch-friendly controls and a simple, intuitive interface ensure a consistent and effective user experience on desktops, tablets, and mobile devices.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Product/Service Approval -->
+						<section class="section-block hentry" id="product_service_approval">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Product/Service Approval<a class="anchor-link ms-2" href="#product_service_approval"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/producte-service-approval/product-service-approve.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This form is designed to manage the activation of "Product" and "Service" features on a platform. Administrators can enable or disable these features using toggle switches, ensuring flexibility in offering specific functionalities based on operational needs.</p>
+										<h6>Layout:</h6>
+										<p>The form is structured into two sections: "Product" and "Service." Each section is neatly aligned within a bordered container, with headings and toggle switches for clear interaction. The use of <span class="text-success">col-md-6</span> ensures both sections are displayed side-by-side on larger screens for better visual balance.</p>
+										<h6>Responsive Design:</h6>
+										<p>The layout adjusts seamlessly across devices. On smaller screens, the sections stack vertically, maintaining usability and accessibility. The toggle switches are touch-friendly, ensuring smooth interaction on mobile devices.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Appearance Settings -->
+						<section class="section-block hentry" id="appearance_settings">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Appearance Settings<a class="anchor-link ms-2" href="#appearance_settings"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/appearance-settings/appearance-settings.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This form allows administrators to customize the color scheme of a website or application. The form includes options for configuring the primary color, secondary color, button color, and button hover color. By using color pickers, administrators can visually adjust and set color values that will be reflected across the platform's interface, ensuring a personalized and cohesive design.</p>
+										<h6>Layout:</h6>
+										<p>The form is organized into a series of distinct sections, each dedicated to a specific color setting (primary, secondary, button color, and button hover color). Each section is clearly labeled with a heading for easy identification. The form inputs use color pickers, which provide a user-friendly way to select colors. These inputs are paired with labels, making the form intuitive and easy to navigate. The overall structure is neatly spaced and visually balanced, with each section enclosed in a bordered container, creating a clean, organized design.</p>
+										<h6>Responsive Design:</h6>
+										<p>The form is fully responsive, using flexible grid columns to ensure that the layout adjusts fluidly across different screen sizes. On larger screens, the input fields and labels are displayed side-by-side, while on smaller devices, they stack vertically. This ensures the form remains user-friendly and accessible on any device, whether it’s a desktop, tablet, or mobile phone. The color pickers are also touch-friendly for easy interaction on mobile devices.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Invoice Settings -->
+						<section class="section-block hentry" id="invoice_settings">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Invoice Settings<a class="anchor-link ms-2" href="#invoice_settings"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/invoice-settings/invoice-settings.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This form is designed for managing the invoice settings of a company. It allows administrators to upload the company logo, define the invoice prefix, set the starting invoice number, display the company name, and customize the header and footer terms of the invoice. These settings ensure that the invoices generated by the system adhere to the company’s branding and formatting requirements. The form provides a straightforward way for administrators to personalize invoice details to suit the company's needs.</p>
+										<h6>Layout:</h6>
+										<p>The form is organized into distinct sections, each with a clear title and associated input fields. The first section allows the uploading of a company logo, followed by sections for configuring the invoice prefix, starting number, company name, and invoice header/footer terms. Each setting is enclosed in a bordered container with a label, an input field, and an optional description. The form is designed to be user-friendly, with clear error messages placed below each input field to guide administrators in filling out the form correctly.</p>
+										<h6>Responsive Design:</h6>
+										<p>The form is fully responsive, utilizing a flexible grid layout with columns that adjust depending on screen size. On larger screens, the form content is spread across multiple columns for easy readability, while on smaller devices, the content stacks vertically for a more compact view. This ensures that the form remains accessible and functional on any device, whether it’s a desktop, tablet, or mobile phone. The logo upload area also accommodates touch interactions for mobile users.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Language Settings -->
+						<section class="section-block hentry" id="language_settings">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Language Settings<a class="anchor-link ms-2" href="#language_settings"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/language-settings/language-settings.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This table is designed to display a list of languages, showing their name, code, direction (RTL or LTR), default status, and current status. It serves as a management interface for administrators to review and manage available languages in the system.</p>
+										<h6>Layout:</h6>
+										<p>The table features a clean, structured layout with columns for language details and an action column for each language. The table header is clearly defined with labels for each field, and an "Action" column is provided for editing or deleting languages.</p>
+										<h6>Responsive Design:</h6>
+										<p>The table is responsive, ensuring readability on various screen sizes. On smaller screens, the table can rearrange or hide certain columns to maintain a clean and user-friendly display without compromising functionality.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Invoice Template Settings -->
+						<section class="section-block hentry" id="invoice_template_settings">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Invoice Template Settings<a class="anchor-link ms-2" href="#invoice_template_settings"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/invoice-template-settings/invoice-template-settings.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This table is designed to display and manage invoice templates, showing essential details such as the title of each template, its default status, and available actions for managing templates. It provides a clear and efficient way to review and modify invoice settings.</p>
+										<h6>Layout:</h6>
+										<p>The table features a structured layout with three columns: "Invoice Title" for identifying templates, "Default" for indicating the primary template, and "Action" for performing operations like edit or delete. The header uses a light theme for distinction.</p>
+										<h6>Responsive Design:</h6>
+										<p>Optimized for all devices, the table adapts to smaller screens using scrollable containers or stacked rows, ensuring functionality and readability on mobile.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Admin Commission -->
+						<section class="section-block hentry" id="admin_commission_1">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Admin Commission<a class="anchor-link ms-2" href="#admin_commission_1"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/admin-commission-1/admin-commission.png" alt="img" class="img-fluid mb-5">
+										<h5>Form Overview</h5>
+										<p><strong>Dynamic Commission Rate:</strong> This form adjusts based on commission type chosen (Percentage or Flat).</p>
+										<p>Commission rate can be set for each (percentage or flat).</p>
+										<p><strong>Layout:</strong> The form should be clean, intuitive, and easy to follow. Each field will be  clearly labeled, and validation messages will guide the provider through the process.</p>
+
+										<h6>Tax Options</h6>
+										<img src="assets/img/admin-commission-1/tax-option.png" alt="img" class="img-fluid mb-5">
+										<h5>Overview</h5>
+										<p>This table is designed to display a list of tax options, showing their tax type, tax rate status toggle(enable or disable), action (edit or delete). It serves as a management interface for administrators to review and manage available tax options in the system.</p>
+
+										<h6>Add Tax</h6>
+										<img src="assets/img/admin-commission-1/add-tax.png" alt="img" class="img-fluid mb-5">
+
+										<h6>Edit Tax:</h6>
+										<img src="assets/img/admin-commission-1/edit-tax.png" alt="img" class="img-fluid mb-5">
+
+										<h6>Features</h6>
+										<p class="fw-semibold">Add Tax option:</p>
+										<p>Admins can create new tax options by providing a tax type, tax rate and  allows to add a maximum of 5.</p>
+										<p class="fw-semibold">Edit Tax option:</p>
+										<p>Modify existing tax options.</p>
+										<p class="fw-semibold">Delete Tax Option:</p>
+										<p>Remove outdated or irrelevant tax option</p>
+										<p class="fw-semibold">Status Toggle:</p>
+										<p>Enable or disable tax option dynamically.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Form Inputs -->
+						<section class="section-block hentry" id="form_inputs">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Form Inputs<a class="anchor-link ms-2" href="#form_inputs"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<h6>Add:</h6>
+										<img src="assets/img/form-inputs/form-inputs-add.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This form dynamically creates customizable input fields for forms, supporting various input types like text, checkboxes, and date pickers. It includes options for placeholders, file sizes, and toggling "required" and "other" statuses.</p>
+										<h6>Layout:</h6>
+										<p>The form uses a clean modal structure with Bootstrap for alignment and spacing. Input fields are grouped logically with labels, toggles, and placeholders. Error validation spans ensure proper user feedback.</p>
+										<h6>Responsive Design:</h6>
+										<p>Bootstrap’s grid (<span class="text-success">col-md-12</span>) ensures responsiveness on all screen sizes. Elements stack vertically on smaller screens for usability. JavaScript toggles (e.g., <span class="text-success">placeholder_div</span>, <span class="text-success">file_size</span>) dynamically display relevant fields, enhancing interactivity.</p>
+
+										<h6>List:</h6>
+										<img src="assets/img/form-inputs/form-inputs-list.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>The list view displays dynamically created form inputs in a structured, readable layout. It allows users to view, edit, or delete existing form fields, providing a comprehensive way to manage input options.</p>
+										<h6>Layout:</h6>
+										<p>Using Bootstrap, the list is organized into rows with columns for key details like label, input type, placeholder, and actions (edit/delete). Buttons are styled for clear user interaction, ensuring accessibility.</p>
+										<h6>Responsive Design:</h6>
+										<p>Bootstrap ensures responsiveness, stacking list elements vertically on smaller screens. Action buttons adapt to mobile views while maintaining usability. Dynamic JavaScript can be used for smooth sorting, filtering, and inline editing.</p>
+
+										<h6>Edit:</h6>
+										<img src="assets/img/form-inputs/form-inputs-edit.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>The form is designed for editing existing input fields dynamically with options such as label, description, placeholder, file size, and additional configurations. It ensures flexibility for updating form inputs efficiently.</p>
+										<h6>Layout:</h6>
+										<p>The form uses Bootstrap's grid system to maintain a clean structure. Fields are grouped logically, and elements like toggles and buttons are styled with Bootstrap classes for clarity and user experience.</p>
+										<h6>Responsive Design:</h6>
+										<p>The form adapts seamlessly to various screen sizes. On smaller devices, input fields and buttons stack vertically. Conditional fields (like placeholder and file size) toggle visibility dynamically to avoid clutter.</p>
+
+										<h6>Delete:</h6>
+										<img src="assets/img/form-inputs/form-inputs-delete.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This form serves as a confirmation dialog for deleting marked items. It ensures users acknowledge the irreversible nature of the action before proceeding, reducing accidental deletions.</p>
+										<h6>Layout:</h6>
+										<p>The form uses a centered modal layout with a delete icon, header, and a descriptive message. Two buttons—Cancel and Confirm Delete—are aligned for easy decision-making.</p>
+										<h6>Responsive Design:</h6>
+										<p>The modal remains centered, and buttons stack properly on smaller devices, maintaining usability and clarity.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- User Leads -->
+						<section class="section-block hentry" id="user_leads">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">User Leads<a class="anchor-link ms-2" href="#user_leads"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/user-leads/user-leads-1.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This form enables users to search for Category. It dynamically displays input fields for category selection on the banner configuration, making it adaptable to different use cases.</p>
+										<h6>Layout:</h6>
+										<p>The form uses a clean, horizontal layout with input fields and a submit button. Bootstrap’s <span class="text-success">input-group</span> ensures proper alignment of icons and inputs. Icons enhance visual clarity, while tooltips guide users.</p>
+										<h6>Responsive Design:</h6>
+										<p>By leveraging Bootstrap's <span class="text-success">d-md-flex</span> and utility classes like <span class="text-success">w-100</span>, the form adjusts seamlessly on various screen sizes. Fields stack vertically on smaller screens while maintaining usability and alignment.</p>
+
+										<h6>User Leads</h6>
+										<img src="assets/img/user-leads/user-leads-2.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>After selecting the all the form Question in the model,finally click the ‘Submit’ button to save the leads and it direct to the provider based on the selected category.</p>
+										<h6>Layout:</h6>
+										<p>The form uses a clean, horizontal layout with input fields and a submit button. Bootstrap’s <span class="text-success">input-group</span> ensures proper alignment of icons and inputs. Icons enhance visual clarity, while tooltips guide users.</p>
+										<h6>Responsive Design:</h6>
+										<p>By leveraging Bootstrap's <span class="text-success">d-md-flex</span> and utility classes like <span class="text-success">w-100</span>, the form adjusts seamlessly on various screen sizes. Fields stack vertically on smaller screens while maintaining usability and alignment.</p>
+
+										<img src="assets/img/user-leads/user-leads-3.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This code dynamically generates provider cards, displaying individual provider details including name, profile image, ratings, and an action button for sending requests. It allows users to select multiple providers using checkboxes and view their details through links. The card is interactive, visually appealing, and functional.</p>
+										<h6>Layout:</h6>
+										<p>The structure uses Bootstrap's grid system (<span class="text-success">col-xl-4 col-md-6</span>) to create responsive three-column layouts on larger screens and two-column layouts on medium screens. The card component organizes content into sections:</p>
+										<p><strong>Header:</strong> Contains a checkbox for provider selection.</p>
+										<p><strong>Body:</strong> Displays the profile image and essential details.</p>
+										<p><strong>Rating & Action:</strong> Displays a star rating with dynamic classes (<span class="text-success">filled</span>) and a call-to-action button.</p>
+										<p>Icons (<span class="text-success">fa-check-circle, fa-star</span>) and dynamic data integration (<span class="text-success">provider_name, averageRating, totalRatings</span>) enhance usability. The profile image uses a fallback URL when unavailable, ensuring a clean user experience.</p>
+										<h6>Responsive Design:</h6>
+										<p>Using Bootstrap classes, the layout is fluid and adjusts based on screen size:</p>
+										<p>On <strong>large screens (xl)</strong>: Cards display in three columns.</p>
+										<p>On <strong>medium screens (md)</strong>: Cards stack into two columns.</p>
+										<p>On <strong>small screens</strong>: Cards appear in a single column.</p>
+
+										<img src="assets/img/user-leads/user-leads-4.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This code dynamically generates a responsive card to display task-related details, such as the provider name, creation date, category, and status. It includes an action link (<span class="text-success">View</span>) for further details, making it ideal for task management or leads tracking.</p>
+										<h6>Layout:</h6>
+										<p>The card uses Bootstrap's grid for structured alignment. It consists of:</p>
+										<p><strong>Left Section</strong>: Displays the avatar, provider name, and creation date.</p>
+										<p><strong>Right Section</strong>: Shows the category, status badge, and a "View" link for interaction.</p>
+										<h6>Responsive Design:</h6>
+										<p>The layout adjusts to screen sizes, stacking elements vertically on smaller screens while maintaining horizontal alignment on larger devices. Padding , spacing , and responsive text ensure readability and usability across devices.</p>
+
+										<img src="assets/img/user-leads/user-leads-5.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This code generates a detailed lead management card featuring user information, status, category, and sub-category. It includes navigation tabs to organize "Request Info," "Provider" lists, and "Notes," enhancing usability for tracking and managing leads.</p>
+										<h6>Layout:</h6>
+										<p>The layout uses a <strong>Bootstrap grid</strong> to divide content into structured sections:</p>
+										<p><strong>Top Row</strong>: Displays user details, category, sub-category, and a "Back" button.</p>
+										<p><strong>Tabs</strong>: Organizes lead details (Request Info, Providers, Notes). Sub-tabs within "Provider" categorize leads as "New," "Accepted," or "Rejected."</p>
+										<h6>Responsive Design:</h6>
+										<p>The design adapts seamlessly to varying screen sizes, ensuring horizontal content alignment on larger screens and vertical stacking on smaller devices. Bootstrap classes ensure responsiveness and spacing.</p>
+
+										<img src="assets/img/user-leads/user-leads-6.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>The provided code dynamically generates provider cards within a lead management system. It displays provider details such as name, category, status, quotes, and actions like <strong>Accept</strong>, <strong>Reject</strong>, <strong>Chat</strong>, and <strong>Pay Now</strong>. The functionality enhances user interaction and decision-making for managing leads.</p>
+										<h6>Layout:</h6>
+										<p><strong>Header Section</strong>: Displays provider name, category badge, and status.</p>
+										<p><strong>Body Section</strong>: Includes expandable "Quote Details" (quote, start date, description) and action buttons.</p>
+										<p>Conditional buttons (<span class="text-success">Accept, Reject, Chat, Pay Now</span>) adapt based on provider and lead status.</p>
+										<h6>Responsive Design:</h6>
+										<p>Using <strong>Bootstrap</strong>  the layout adapts seamlessly for various devices. Content stacks vertically on small screens while maintaining spacing and alignment.</p>
+									</div>
+							</div>
+						</section>
+
+						<!-- Provider Leads -->
+						<section class="section-block hentry" id="provider_leads">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Provider Leads<a class="anchor-link ms-2" href="#provider_leads"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/provider-leads/provider-leads-1.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>The provided code dynamically generates a user card displaying key information such as the user's name, category, creation date, and status. It allows for easy viewing of lead details through a clickable "view" button. This setup is intended for lead management systems, enabling users to quickly access and review lead data.</p>
+										<h6>Layout:</h6>
+										<p><strong>Left Section</strong>: Displays user name, formatted with uppercase first letter, and creation date.</p>
+										<p><strong>Right Section</strong>: Shows category, status badge, and an action button ("View").</p>
+										<p>The layout is structured using rows and columns for proper alignment and spacing.</p>
+										<h6>Responsive Design:</h6>
+										<p>The design uses <strong>Bootstrap</strong>  for responsiveness. On smaller screens, the content adapts by stacking vertically and maintaining legibility with adequate padding and spacing. The layout remains functional and visually appealing across different device sizes.</p>
+
+										<img src="assets/img/provider-leads/provider-leads-2.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>The provided code is designed for displaying lead details and providing an interface for submitting quotes to providers. It includes sections for showing user information, category details, and status with options to accept or reject the lead. Users can also view and submit a quote with associated details like start date and description through a form.</p>
+										<h6>Layout:</h6>
+										<p><strong>Top Section</strong>: Displays user name, status, creation date, and categories in separate columns.</p>
+										<p><strong>Tab Section</strong>: Includes tabs for "Request Info" and "Quote."</p>
+										<p><strong>Quote Form</strong>: Allows submission of quote details with input fields for quote amount, start date, and description.</p>
+										<h6>Responsive Design:</h6>
+										<p>The design is built with <strong>Bootstrap grid</strong> to ensure responsiveness on various screen sizes. On mobile screens, the layout adapts by stacking elements and maintaining clarity with proper spacing and element resizing for readability.</p>
+
+										<img src="assets/img/provider-leads/provider-leads-3.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>The code represents a form for submitting a provider quote, with fields for entering the quote amount, start date, and a description. Each field is validated, and error messages are displayed if any field is incorrectly filled. The form includes a submit button to send the data.</p>
+										<h6>Layout:</h6>
+										<p>The form is structured in a <strong>two-column layout</strong> for larger screens, with fields for the quote amount and start date positioned side by side.</p>
+										<p>The <strong>description</strong> field spans the full width beneath the other fields.</p>
+										<p>The submit button is aligned to the right for consistent action placement.</p>
+										<h6>Responsive Design:</h6>
+										<p>The layout uses <strong>Bootstrap's grid system</strong> (via <span class="text-success">col-md-6</span>) to ensure responsiveness. On smaller screens, the form fields stack vertically, ensuring readability. The form is mobile-friendly, and the text</p>
+
+									</div>
+							</div>
+						</section>
+
+						<!-- Admin Leads -->
+						<section class="section-block hentry" id="admin_leads">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Admin Leads<a class="anchor-link ms-2" href="#admin_leads"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="#" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="server">
+										<img src="assets/img/admin-leads/admin-leads-1.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This code dynamically generates a responsive card to display task-related details, such as the provider name, creation date, category, and status. It includes an action link (<span class="text-success">View</span>) for further details, making it ideal for task management or leads tracking.</p>
+										<h6>Layout:</h6>
+										<p>The card uses Bootstrap's grid for structured alignment. It consists of:</p>
+										<p><strong>Left Section</strong>: Displays the avatar, provider name, and creation date.</p>
+										<p><strong>Right Section</strong>: Shows the category, status badge, and a "View" link for interaction.</p>
+										<h6>Responsive Design:</h6>
+										<p>The layout adjusts to screen sizes, stacking elements vertically on smaller screens while maintaining horizontal alignment on larger devices. Padding , spacing , and responsive text ensure readability and usability across devices.</p>
+
+										<img src="assets/img/admin-leads/admin-leads-2.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>This code generates a detailed lead management card featuring user information, status, category, and sub-category. It includes navigation tabs to organize "Request Info," "Provider" lists, and "Notes," enhancing usability for tracking and managing leads.</p>
+										<h6>Layout:</h6>
+										<p>The layout uses a Bootstrap grid to divide content into structured sections:</p>
+										<p><strong>Top Row</strong>: Displays user details, category, sub-category, and a "Back" button.</p>
+										<p><strong>Tabs</strong>: Organizes lead details (Request Info, Providers, Notes). Sub-tabs within "Provider" categorize leads as "New," "Accepted," or "Rejected."</p>
+										<h6>Responsive Design:</h6>
+										<p>The design adapts seamlessly to varying screen sizes, ensuring horizontal content alignment on larger screens and vertical stacking on smaller devices. Bootstrap classes ensure responsiveness and spacing.</p>
+
+										<img src="assets/img/admin-leads/admin-leads-3.png" alt="img" class="img-fluid mb-5">
+										<h6>Purpose:</h6>
+										<p>The code defines a provider card layout that displays essential details of a provider's quote submission. It includes the provider's name, category, quote details (quote amount, start date, and description), and a status badge. The <span class-="text-success">view</span> button allows the user to view more detailed information about the quote. The design also handles dynamic data display, ensuring that missing values are replaced with "N/A."</p>
+										<h6>Layout:</h6>
+										<p><strong>Top Section</strong>: Displays the provider's name, category, and status with actions (view button).</p>
+										<p><strong>Details Section</strong>: Displays quote information (quote amount, start date, description) in a collapsible panel.</p>
+										<h6>Responsive Design:</h6>
+										<p>The layout uses a <strong>flexbox</strong> approach for alignment, ensuring the content adjusts based on screen size. On smaller screens, elements stack naturally, maintaining readability and accessibility. The <span class="text-success">w-50</span> class ensures the content remains balanced, while the use of <strong>Bootstrap's grid</strong> system ensures responsiveness.</p>
+
+										
+									</div>
+							</div>
+						</section>
+						
+						<!-- FAQ -->
+						<section class="section-block hentry" id="faq">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">FAQs<a class="anchor-link ms-2" href="#faq"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="javascript:void(0)" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="accordion" id="faq_list">
+										<div class="accordion-item">
+											<h2 class="accordion-header">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												Can I use this platform on multiple domains?
+											</button>
+											</h2>
+											<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faq_list">
+											<div class="accordion-body">
+												With one purchase code you can use it on one domain name. You need to get new license for every new domain name, please check <a href="https://codecanyon.net/licenses/standard" target="_blank">Envato Help Page</a> for more information about licenses. </div>
+											</div>
+										</div>
+										<div class="accordion-item">
+											<h2 class="accordion-header">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+												I got a problem, How can I get support?
+											</button>
+											</h2>
+											<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faq_list">
+											<div class="accordion-body">
+												If you need support, or if you're facing any problems, please contact us via <a href="#">Envato Support</a>
+												<br> Please note that our respond can take up to 2 business days.
+											</div>
+											</div>
+										</div>
+										<div class="accordion-item">
+											<h2 class="accordion-header">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+												What does the support include?
+											</button>
+											</h2>
+											<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faq_list">
+											<div class="accordion-body">
+												<ul class="list-disc">
+													<li>Availability to answer questions, Answering technical questions about item’s features, Assistance with reported bugs and issues, Help with included 3rd party assets.</li>
+													<li>Any customization request will be ignored.</li>
+													<li>Please make sure to read more about the <a href="https://codecanyon.net/page/item_support_policy" target="_blank">support policy</a>. </li>
+												</ul>
+											</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						
+						<!-- Support -->
+						<section class="section-block page-block hentry" id="support">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">Support<a class="anchor-link ms-2" href="#support"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="javascript:void(0)" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+
+									<p>If this documentation does not address your questions, please feel free to contact us via email at <a class="btn btn-primary btn-sm" target="_blank" href="https://codecanyon.net/item/truelysell-ondemand-service-marketplace-nearby-service-finder-and-bookings/26400110/support">Item Support Page</a>
+									</p>
+									<p>We are in the GMT+5:30 time zone and typically respond to inquiries on weekdays within 12-24 hours. Please note that in rare cases, the response time may extend to 48 hours, especially during holiday seasons.</p>
+									<div class="alert alert-warning mb-4">
+										<span class="badge rounded-pill text-bg-danger text-uppercase">Note:</span> 
+										<p class="mb-0">We strive to offer top-notch support, but it's only available to verified buyers and for template-related issues such as bugs and errors. Custom changes and third-party module setups are not covered.</p>
+									</div>
+									<h5>Don’t forget to Rate truelysell! <i class="fas fa-star text-warning"></i>
+										<i class="fas fa-star text-warning"></i>
+										<i class="fas fa-star text-warning"></i>
+										<i class="fas fa-star text-warning"></i>
+										<i class="fas fa-star text-warning"></i>
+									</h5>
+									<div class="alert alert-success mb-0">Please take a moment to rate our product on codecanyon. Your support means a lot to us. Just go to your <strong>codecanyon Profile > Downloads Tab</strong>, and you can leave a review for our script. Thank you!</div>
+						
+								</div>
+							</div>
+						</section>
+						
+						<!-- Licence -->
+						<section class="section-block page-block hentry" id="license">
+							<div class="custom-card">
+								<div class="card-header">
+									<h4 class="card-title">License<a class="anchor-link ms-2" href="#license"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<div class="header-tools">
+										<a href="javascript:void(0)" class="card-maximize">
+											<span class="feather-icon" title="Full Screen"><i data-feather="maximize"></i></span></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<p>truelysell is developed by <a href="https://codecanyon.net/user/dreamstechnologies/portfolio" target="_blank">Dreams Technologies</a> and is available under both <a href="https://codecanyon.net/licenses/standard" target="_blank">Envato Extended &amp; Regular License</a> options.</p>
+									<h6>Regular License</h6>
+									<p>Usage by either yourself or a single client is permitted for a single end product, provided that end users are not subject to any charges.</p>
+									<h6>Extended License</h6>
+									<p>For use by you or one client in a single end product for which end users may be charged.</p>
+									<p><a href="https://codecanyon.net/licenses/faq#main-differences-licenses-a" target="_blank">What are the main differences between the Regular License and the Extended License?</a></p>
+									<div class="alert alert-info mb-0">
+										<span class="badge rounded-pill text-bg-danger text-uppercase">Note</span>
+										<p class="mb-0">If you operate as a freelancer or agency, you have the option to acquire the Extended License, which permits you to utilize the item across multiple projects on behalf of your clients.</p>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- Customwork -->
+						<section class="section-block page-block hentry" id="customwork">
+							<div class="custom-card bg-gr-1 text-center">
+								<div class="card-body">
+									<h4 class="card-title">Do you need a customized application for your business?</h4>
+									<p>If you need a customized application for your business depends on your specific requirements and goals, Please contact us.</p>
+									<p>Customization can be the key to success, ensuring your project perfectly aligns with your unique goals and requirements.</p>
+									<div class="hire">
+										<h6>Don't Miss Out on the Benefits of Customization!</h6>
+										<p>Unlock the potential of your project. It's time to ensure that your project isn't just another cookie-cutter solution but a truly unique and effective one.</p>
+										<p>Discover how customization can make a difference in your project's success. Let's create a solution that's as unique as your vision!</p>
+										<ul>
+											<li>We'll tailor the application to meet your specific needs and preferences.</li>
+											<li>We will upload your website to the server and ensure it is live.</li>
+										</ul>
+										<div class="contact-btn mb-3">
+											<a target="_blank" href="https://calendly.com/dreamstechnologies" class="btn btn-primary me-2"><i class="fa-solid fa-calendar-days me-2"></i>Book an Appointment</a>
+											<a href="mailto:support@dreamstechnologies.com" class="btn btn-primary"><i class="fa-solid fa-calendar-days me-2"></i>Get a Free Quote</a>
+										</div>
+										<div class="contact-link">
+											<a href="https://join.skype.com/invite/KqfsfMbmDu9a" class="px-2 link-body-emphasis"><i class="fa-brands fa-skype me-1"></i>dreamstechnologies</a>
+											<a target="_blank" href="mailto:business@dreamstechnologies.com" class="px-2 link-body-emphasis"><i class="fa fa-envelope me-1"></i> business@dreamstechnologies.com</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						
+						<div class="section-block" id="change_log">
+							<div class="custom-card page-block">
+								<div class="card-header">
+									<h4 class="card-title">Version 2.4.5<a class="anchor-link ms-2"
+											href="#changelog"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<small>30 Jan 2026</small>
+								</div>
+								<div class="card-body">
+									<span class="badge btn-soft-info">Laravel</span>
+									<ul class="mb-3">
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Provider - Promote option
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Service - Promote option
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Admin - Clear cache
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Recurring Subscription - Stripe and Paypal
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Update</span>
+												OTP - Email and Booking logical change
+										</li>																		
+									</ul>									
+								</div>									
+							</div>
+							<div class="custom-card page-block">
+								<div class="card-header">
+									<h4 class="card-title">Version 2.4.4<a class="anchor-link ms-2"
+											href="#changelog"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<small>29 Nov 2025</small>
+								</div>
+								<div class="card-body">
+									<span class="badge btn-soft-info">Laravel</span>
+									<ul class="mb-3">
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Provider - Badge and Featured option
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Provider - Profile URL generation
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Provider - Approval notification
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Provider - Documents upload on the profile page
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Address autofill - Geolocation based address autofill for the user, provider and the admin
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Updated</span>
+												COD - Payout calculation issue fixing
+										</li>																			
+									</ul>									
+								</div>									
+							</div>
+							<div class="custom-card page-block">
+								<div class="card-header">
+									<h4 class="card-title">Version 2.4.3<a class="anchor-link ms-2"
+											href="#changelog"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<small>08 Nov 2025</small>
+								</div>
+								<div class="card-body">
+									<span class="badge btn-soft-info">Laravel</span>
+									<ul class="mb-3">
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Theme color option
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Geolocation-based services
+										</li>																			
+									</ul>									
+								</div>									
+							</div>
+							<div class="custom-card page-block">
+								<div class="card-header">
+									<h4 class="card-title">Version 2.4.2<a class="anchor-link ms-2"
+											href="#changelog"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<small>03 Sep 2025</small>
+								</div>
+								<div class="card-body">
+									<span class="badge btn-soft-info">Laravel</span>
+									<ul class="mb-3">
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Bank Transfer for subscription
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Bank Transfer for service booking
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Update</span>
+												Service provider - staff - Email notifications
+										</li>										
+									</ul>									
+								</div>									
+							</div>
+							<div class="custom-card page-block">
+								<div class="card-header">
+									<h4 class="card-title">Version 2.4.1<a class="anchor-link ms-2"
+											href="#changelog"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<small>06 Aug 2025</small>
+								</div>
+								<div class="card-body">
+									<span class="badge btn-soft-info">Laravel</span>
+									<ul class="mb-3">
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Integrated social media links and sharing functionality
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Google Maps Location API integration
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Booking and email notifications configured successfully
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Admin panel enhancements: Provider and Service approval options are added
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Bugs</span>
+												General bug fixes and performance improvements
+										</li>
+									</ul>									
+								</div>									
+							</div>
+							<div class="custom-card page-block">
+								<div class="card-header">
+									<h4 class="card-title">Version 2.4.0<a class="anchor-link ms-2"
+											href="#changelog"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<small>04 Jul 2025</small>
+								</div>
+								<div class="card-body">
+									<span class="badge btn-soft-info">Laravel</span>
+									<ul class="mb-3">
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												MQTT Chat
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Update</span>
+												Ehnanced the Category and Sub-category as a user-friendly
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Bugs</span>
+												Resolved the issues based on the language and the currency
+										</li>
+									</ul>									
+								</div>									
+							</div>
+							<div class="custom-card page-block">
+								<div class="card-header">
+									<h4 class="card-title">Version 2.3.9<a class="anchor-link ms-2"
+											href="#changelog"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<small>24 Apr 2025</small>
+								</div>
+								<div class="card-body">
+									<span class="badge btn-soft-info">Laravel</span>
+									<ul class="mb-3">
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Added</span>
+												Mobile API
+										</li>										
+									</ul>									
+								</div>									
+							</div>
+							<div class="custom-card page-block">
+								<div class="card-header">
+									<h4 class="card-title">Version 2.3.8<a class="anchor-link ms-2"
+											href="#changelog"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<small>28 Mar 2025</small>
+								</div>
+								<div class="card-body">
+									<span class="badge btn-soft-info">Laravel</span>
+									<ul class="mb-3">
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Updated</span>
+												Laravel - v12
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Updated</span>
+												Features - Addons
+										</li>
+										
+									</ul>
+									
+								</div>
+									
+							</div>
+						
+							<div class="custom-card page-block">
+								<div class="card-header">
+									<h4 class="card-title">Version 2.3.7<a class="anchor-link ms-2"
+											href="#changelog"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<small>10 Feb 2025</small>
+								</div>
+								<div class="card-body">
+									<span class="badge btn-soft-info">Laravel</span>
+									<ul class="mb-3">
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Updated</span>
+												User - Easy appointment slot booking
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Updated</span>
+												Provider - Add locations, staff, and services based on location and staff.
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Updated</span>
+												Provider - Manage roles and permissions.
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Updated</span>
+												Features - ChatGPT support for service content search.
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Updated</span>
+												Features - Payment gateway integration (Mollie and Cash on Delivery).
+										</li>
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Updated</span>
+												Features - Database backup.
+										</li>
+									</ul>
+									
+								</div>
+									
+							</div>
+							
+							<div class="custom-card page-block">
+								<div class="card-header">
+									<h4 class="card-title">Version 2.3.6<a class="anchor-link ms-2"
+											href="#changelog"><i class="fa-solid fa-hashtag"></i></a></h4>
+									<small>08 Jan 2025</small>
+								</div>
+								<div class="card-body">
+									<span class="badge btn-soft-info">Laravel</span>
+									<ul class="mb-3">
+										<li class="mt-0"><span
+											class="badge text-bg-warning rounded-pill me-2">Updated</span>
+												Migrated to Laravel
+										</li>
+										
+									</ul>
+									
+								</div>
+									
+							</div>
+						</div>
+						
+						<!-- Thanks -->
+						<section class="custom-card page-block hentry  min-h-100" id="thanks">
+							<div class="card-body">
+								<div class="thanks">
+									<img src="assets/img/banners/ratings.svg" alt="thanks">
+									<h2>Thank You</h2>
+									<p>Thank you once again for downloading <strong>truelysell</strong>.<br>
+									We hope you're enjoying your experience, and we kindly request that you take a moment to share your valuable review and rating with us.</p>
+									<strong>Review Link:</strong><a href="https://codecanyon.net/downloads" class="text-primary fw-bold fs-5" target="_blank">https://codecanyon.net/downloads</a>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div><footer class="content-footer footer">
+  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center text-center py-3">
+    <div>
+      &copy; 2015- <script>
+      document.write(new Date().getFullYear())
+
+      </script>
+      
+      <a href="https://dreamstechnologies.com/" class="footer-text fw-medium text-primary" target="_blank">Dreams Technologies</a>
+      
+    </div>
+    <div class="social-icons">
+		<a href="https://www.facebook.com/dreamstechnologieslimited/" class="footer-link me-2"
+			target="_blank"><i class="fa-brands fa-facebook"></i></a>
+		<a href="https://twitter.com/dreamstechltd" class="footer-link me-2" target="_blank"><i
+				class="fa-brands fa-twitter"></i></a>
+		<a href="https://www.behance.net/dreamstechnologies" class="footer-link me-2" target="_blank"><i
+				class="fa-brands fa-behance"></i></a>
+		<a href="https://dribbble.com/dreamstechnologies" class="footer-link me-2" target="_blank"><i
+				class="fa-brands fa-dribbble"></i></a>
+		<a href="https://www.instagram.com/dreamstechnologieslimited/" class="footer-link"
+			target="_blank"><i class="fa-brands fa-instagram"></i></a>
+	</div>
+  </div>
+</footer>
+		</div>	
+
+	</main>
+
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/prism.js"></script>
+<script src="assets/js/feather.min.js"></script>
+<script src="assets/js/jquery.zoom.min.js"></script>
+
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,10 @@
+<?php
+
+return [
+   'fcm' => [
+        'project_id' =>"truelysell-570e9",
+        'client_email' => "firebase-adminsdk-70jk4@truelysell-570e9.iam.gserviceaccount.com",
+        'private_key' => "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCn+4QEXHct3XNy\nr8LZCia5ImOiflGcgdm1QdET4RSqPGd16o4qVEQjlVIboQsBynYy0Til1/BuMPCm\nE7k08lozOtPzeGONCeL7FlL9XQPbXf4g/Uzne9ifBuka0WCpo6gyI1SNySlhg9tv\nUNaFUcrZeN0xnqZdEHMgE/sxU095cXIcw0dYEArB8J3Vnp6uvB1XxGDkIHsXyLab\nozpl5/zrQcEUXIEQFGrJ/xYk4UkWmydCtFZKf7h8HvfLI1Itweat7KDN6eBfiuMy\nxEWkW2x2Mu5YwHQKFrnc8+cawkC2C3bEZ5mMNL5bt45t37KE2QURKgQqt/EzK5NX\n4mTKYcgPAgMBAAECggEAARkrZU3nd5TNlu/gQcQHuckoRp010mSk9ELwZ4Veubg4\nYvR8Jnmzkln9FfIpHMNin3VvveHaEBZg1G0nllmJTnFxhlOAryDj64lbVI3BozML\noNKXKKJOKcgFSSgaTjGkPWOuv1iT3S/cBO/N30RII8DfDV6ArvYXEpwe1dU6HUym\nXzDsNu0w7uIneTlOIJq64T4kAEWfq8c77Wg8Tg1H4pUNC4L2yCuzoGCJlbIeXM8P\n3ftK201b5NNh8OwcolaX+9/g2/wQypWROzP3LTaGF/UokXyGZL0X2lBpsrM8RmsB\n1aRPpneOh/A+PtgMEpqMY50FEhCDgofHv4nebwJETQKBgQDdN7p+P9Y6xK82XWr/\niK8Q1lh18r6ExQQ1HHntn/dUqFpx/FUSXBiVJpodoaxF+0nPGq2jfLFjA+8ionJR\n8pHnQxI9pHgBe35v/rzIrxcAHfjJQEiIQ5PT+3/SGLOLiTGkNWnBin92Z4uOhgIn\nm7uJgqk0R4pR0NXu1cBZm33YWwKBgQDCZQH4rjziKpuztxB2R0sw9xqFbnhmZooi\nHy0Od+yDTWWXDBM0q+2eB6pLtw/vu8YJkWC1b5Tc+faeT8qoI8BiT8CO2znYhzt1\nbnXJUqVSqoW0ZJXdR5CVlNLElfY6T6HPx/Wamob7L8BaEOnW/kBvz2EJybyp0Ba+\n51PyKf29XQKBgC5jlFELM/Jo8lEVL+3cDNIcELrTJ46R/frhONRSujvffe/vOSu7\nclA8ow7Zq1WVh3nNn2HsMQqRdaEurYhvtJbpYrbYeW3eJrp3kcEHrmwQ3O3e9BbX\nDPXkBH7bPTNilq1XohC66VW8CvDdOzBxINeKNc9HvULA50vJOSfRSoeHAoGBAJYD\nuuy9EXD7rqKWoFaWmBkWaFoWMUXc1baVVoD23QdK4B4bjGq2Ty4H/kxl3h+EScSy\ncu4xSLDrGX18WAk/ZcS4hQH5ff9yBNmPv8f4Rmqv+3SFtv1Hr/UvHyPkEltXfqjJ\nR+jiXU5UwF0A9mQaW4GtiNYz36swUY1LGYYlD5JlAoGAEnLrMytlTbth0jSq1eLD\n1dUoNWHAHjMiDGuXhDULpAgHuyP+O9rC1UVYTjbNaYL7oCVRd19T5S/kD5dXxmwJ\nn4cdEVtZMoF51Z6gJOUWpIQ1sRcnfrpw8kvnlIcejOxOQERbJa+ugN9YiJpfPMD6\nD9+se0P/LjJtKde3VPKAw6I=\n-----END PRIVATE KEY-----\n",
+        'url' =>"https://fcm.googleapis.com/v1/projects/truelysell-570e9/messages:send",
+    ],
+];

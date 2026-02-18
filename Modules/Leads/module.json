@@ -1,0 +1,14 @@
+{
+    "name": "Leads",
+    "alias": "leads",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Leads\\Providers\\LeadsServiceProvider",
+        "Modules\\Leads\\Providers\\RepositoryServiceProvider",
+        "Modules\\Leads\\Providers\\EventServiceProvider",
+        "Modules\\Leads\\Providers\\RouteServiceProvider"
+    ],
+    "files": []
+}

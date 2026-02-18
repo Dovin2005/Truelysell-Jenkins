@@ -1,0 +1,14 @@
+{
+    "name": "Faq",
+    "alias": "faq",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Faq\\Providers\\FaqServiceProvider",
+        "Modules\\Faq\\Providers\\EventServiceProvider",
+        "Modules\\Faq\\Providers\\RouteServiceProvider",
+        "Modules\\Faq\\Providers\\RepositoryServiceProvider"
+    ],
+    "files": []
+}

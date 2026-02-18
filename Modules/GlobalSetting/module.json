@@ -1,0 +1,14 @@
+{
+    "name": "GlobalSetting",
+    "alias": "globalsetting",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+       "Modules\\GlobalSetting\\Providers\\GlobalSettingServiceProvider",
+        "Modules\\GlobalSetting\\Providers\\RepositoryServiceProvider",
+        "Modules\\GlobalSetting\\Providers\\EventServiceProvider",
+        "Modules\\GlobalSetting\\Providers\\RouteServiceProvider"
+    ],
+    "files": []
+}

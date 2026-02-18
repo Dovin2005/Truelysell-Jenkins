@@ -1,0 +1,17 @@
+{
+    "name": "Installer Addon",
+    "is_default": true,
+    "description": "This is Installer Addon",
+    "author": {
+        "name": "TruelyShell",
+        "email": "dreamslms@gmail.com",
+        "website": "https://dreamstechnologies.com"
+    },
+    "license": "Proprietary",
+    "url": "",
+    "options" : {
+        "route" : "home"
+    },
+    "last_update": "2024-03-31",
+    "version": "1.0.0"
+}

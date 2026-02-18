@@ -1,0 +1,21 @@
+{
+    "GlobalSetting": true,
+    "Installer": false,
+    "Categories": true,
+    "Communication": true,
+    "Testimonials": true,
+    "Newsletter": true,
+    "Blogs": true,
+    "RolesPermissions": true,
+    "Chat": true,
+    "Service": true,
+    "Page": true,
+    "Leads": true,
+    "MenuBuilder": true,
+    "Coupon": true,
+    "Report": true,
+    "Advertisement": true,
+    "Chatbot": true,
+    "PaymentGateway": true,
+    "GoogleCalendarSync": true
+}

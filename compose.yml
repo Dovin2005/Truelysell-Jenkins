@@ -5,6 +5,8 @@ services:
   app:
     build: .
     container_name: truelysell-php
+    volumes:
+      - .:/var/www
     networks:
       - truelysell-network
 

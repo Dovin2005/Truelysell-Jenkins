@@ -1,0 +1,180 @@
+pipeline {
+ agent any
+
+ environment {
+  SERVER = "ubuntu@172.31.35.110"
+  APP_DIR = "/home/ubuntu/Truelysell-Jenkins"
+  BRANCH = "main"
+  SCANNER_HOME = tool 'SonarScanner'
+ }
+
+ stages {
+
+  stage('Checkout Code'){
+   steps{
+    git branch: 'main', url: 'https://github.com/Dovin2005/Truelysell-Jenkins.git'
+   }
+  }
+
+  stage('Update Repo On Server'){
+   steps{
+    sh """
+    ssh $SERVER '
+
+    # Ensure project directory exists
+    mkdir -p $APP_DIR
+
+    # Fix permissions before git operations
+    sudo chown -R ubuntu:ubuntu $APP_DIR || true
+
+    if [ ! -d "$APP_DIR/.git" ]; then
+        git clone https://github.com/Dovin2005/Truelysell-Jenkins.git $APP_DIR
+    fi
+
+    cd $APP_DIR
+
+    git config --global --add safe.directory $APP_DIR
+
+    git fetch origin --quiet
+    git reset --hard origin/$BRANCH --quiet
+    '
+    """
+   }
+  }
+
+  stage('Check Docker Changes'){
+   steps{
+    script {
+     def changes = sh(
+       script: """
+       ssh $SERVER '
+       cd $APP_DIR
+       git diff --name-only HEAD~1 HEAD | grep -E "Dockerfile|compose.yml|docker-compose.yml" || true
+       '
+       """,
+       returnStdout: true
+     ).trim()
+
+     if (changes) {
+       env.REBUILD = "true"
+     } else {
+       env.REBUILD = "false"
+     }
+    }
+   }
+  }
+
+  stage('Build Docker Image'){
+   when {
+    expression { env.REBUILD == "true" }
+   }
+   steps{
+    sh """
+    ssh $SERVER '
+    cd $APP_DIR
+    docker compose build
+    '
+    """
+   }
+  }
+
+  stage('Restart Containers'){
+   steps{
+    sh """
+    ssh $SERVER '
+    cd $APP_DIR
+    docker compose up -d
+    '
+    """
+   }
+  }
+
+  stage('Install Dependencies'){
+   steps{
+    sh """
+    ssh $SERVER '
+    cd $APP_DIR
+
+    docker compose exec -T app composer install --no-interaction --optimize-autoloader
+
+    # Create .env if missing
+    docker compose exec -T app sh -c "[ -f .env ] || cp .env.example .env"
+
+    docker compose exec -T app php artisan key:generate --force || true
+    '
+    """
+   }
+  }
+
+  stage('Run Unit Tests'){
+   steps{
+    sh """
+    ssh $SERVER '
+    cd $APP_DIR
+    docker compose exec -T app vendor/bin/phpunit
+    '
+    """
+   }
+  }
+
+  stage('SonarQube Analysis'){
+   steps{
+    withSonarQubeEnv('Sonar-Qube'){
+     withCredentials([string(credentialsId: 'Sonar-Token', variable: 'SONAR_TOKEN')]){
+
+      sh """
+      ${SCANNER_HOME}/bin/sonar-scanner \
+       -Dsonar.projectKey=Truelysell \
+       -Dsonar.sources=app,routes,resources \
+       -Dsonar.exclusions=vendor/**,node_modules/**,public/**,storage/**,bootstrap/**,tests/** \
+       -Dsonar.host.url=http://172.31.40.252:9000 \
+       -Dsonar.token=$SONAR_TOKEN
+      """
+
+     }
+    }
+   }
+  }
+
+  stage('Quality Gate'){
+   steps{
+    timeout(time:15, unit:'MINUTES'){
+     waitForQualityGate abortPipeline: true
+    }
+   }
+  }
+
+  stage('Laravel Setup'){
+   steps{
+    sh """
+    ssh $SERVER '
+    cd $APP_DIR
+
+    docker compose exec -T app php artisan migrate --force || true
+
+    docker compose exec -T app php artisan cache:clear
+    docker compose exec -T app php artisan config:clear
+    docker compose exec -T app php artisan route:clear
+    docker compose exec -T app php artisan view:clear
+
+    docker compose exec -T app php artisan config:cache
+    docker compose exec -T app php artisan view:cache
+
+    # Restore Laravel permissions
+    docker compose exec -T app chown -R www-data:www-data storage bootstrap/cache
+    '
+    """
+   }
+  }
+
+ }
+
+ post{
+  success{
+   echo 'Deployment successful'
+  }
+  failure{
+   echo 'Deployment failed'
+  }
+ }
+}

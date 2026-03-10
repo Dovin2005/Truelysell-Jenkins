@@ -1,0 +1,65 @@
+# ==============================
+# STAGE 1 — Build Laravel
+# ==============================
+FROM php:8.4-fpm AS builder
+
+# Install system dependencies (including libonig-dev for mbstring)
+RUN apt-get update && apt-get install -y \
+    git unzip curl \
+    libzip-dev \
+    libxml2-dev \
+    libonig-dev \
+    && docker-php-ext-install pdo_mysql mbstring xml zip bcmath
+
+# Install Composer
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+
+WORKDIR /var/www
+COPY . .
+
+# Create Laravel required directories
+RUN mkdir -p \
+    storage/framework/cache \
+    storage/framework/sessions \
+    storage/framework/views \
+    storage/logs \
+    bootstrap/cache
+
+RUN chown -R www-data:www-data storage bootstrap/cache \
+    && chmod -R 775 storage bootstrap/cache
+
+# Install dependencies (production mode)
+RUN composer install --no-dev --no-interaction --optimize-autoloader
+
+
+
+# ==============================
+# STAGE 2 — Production
+# ==============================
+FROM php:8.4-fpm
+
+# Install nginx + required libraries
+RUN apt-get update && apt-get install -y \
+    nginx \
+    libzip-dev \
+    libxml2-dev \
+    libonig-dev \
+    && docker-php-ext-install pdo_mysql mbstring xml zip bcmath \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /var/www
+
+# Copy Laravel app from builder
+COPY --from=builder /var/www /var/www
+
+# Copy nginx config
+COPY nginx/default.conf /etc/nginx/sites-available/default
+
+# Set permissions
+RUN chown -R www-data:www-data /var/www
+
+# Expose port
+EXPOSE 80
+
+# Start both PHP-FPM and Nginx
+CMD ["sh", "-c", "php-fpm -D && nginx -g 'daemon off;'"]
